@@ -19,7 +19,7 @@ class Footer extends Component {
            </ul>
 
            <ul className="copyright">
-              <li>&copy; Copyright 2017 SMI Consulting</li>
+              <li>&copy; Copyright 2020 SMI Consulting</li>
            </ul>
 
         </div>
