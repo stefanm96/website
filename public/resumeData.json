@@ -1,83 +1,93 @@
 {
   "main": {
-    "name":"SMI Consulting",
-    "occupation":"(Your Occupation Here)",
-    "description":"Ihr Parnter in der Digitalisierung.",
-    "image":"profilepic.png",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "name": "SMI Consulting",
+    "occupation": "(Your Occupation Here)",
+    "description": "Ihr Parnter in der Digitalisierung.",
+    "image": "profilepic.png",
+    "bio": "Seit 2018 unterstütze ich als IT-Berater verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Archiktektur, Entwicklung und dem Betrieb (DevOps).",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "stefanmichel96@gmail.com",
     "phone": "555-555-5555",
-    "address":{
-      "street":"(Your Street)",
-      "city":"Lohne",
-      "state":"",
+    "address": {
+      "street": "(Your Street)",
+      "city": "Lohne",
+      "state": "",
       "zip": "49393"
     },
-    "website": "http://www.example.com",
-    "resumedownload":"http://example.com",
-    "social":[
+    "website": "https://www.smiconsulting.de",
+    "resumedownload": "http://example.com",
+    "social": [
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/stefan-michel-68952318a/",
-        "className":"fa fa-linkedin"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/stefan-michel-68952318a/",
+        "className": "fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"https://www.instagram.com/smi_consulting/",
-        "className":"fa fa-instagram"
+        "name": "instagram",
+        "url": "https://www.instagram.com/smi_consulting/",
+        "className": "fa fa-instagram"
       },
       {
-        "name":"github",
-        "url":"https://github.com/stefanm96/",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "https://github.com/stefanm96/",
+        "className": "fa fa-github"
       }
     ]
   },
-  "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
-    "education":[
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
       {
-        "school":"example",
-        "degree":"example",
-        "graduated":"example",
-        "description":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+        "school": "example",
+        "degree": "example",
+        "graduated": "example",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
       }
     ],
-    "work":[
+    "work": [
       {
-        "company":"example",
-        "title":"example",
-        "years":"example",
-        "description":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+        "company": "example",
+        "title": "example",
+        "years": "example",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
       }
     ],
-    "skills":[
-      {
-        "name":"Git",
-        "level":"60%"
-      },
-      {
-        "name":"example",
-        "level":"55%"
-      }
-    ]
-  },
-  "portfolio":{
     "projects": [
       {
-        "title":"example",
-        "category":"example",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.example.com"
+        "role": "example",
+        "customer": "example",
+        "location": "Oldenburg",
+        "title": "example",
+        "duration": "2019-2020",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "example",
+        "level": "55%"
       }
     ]
   },
-  "testimonials":{
-    "testimonials":[
+  "portfolio": {
+    "projects": [
       {
-        "text":"example",
-        "user":"example"
+        "title": "example",
+        "category": "example",
+        "image": "canadian-wanderlust.jpg",
+        "url": "https://www.example.com"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "example",
+        "user": "example"
       }
     ]
   }
