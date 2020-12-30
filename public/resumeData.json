@@ -38,28 +38,53 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "example",
-        "degree": "example",
-        "graduated": "example",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+        "school": "Udacity",
+        "degree": "Certified Cloud Developer",
+        "graduated": "02-2020 - 05-2020",
+        "description": "https://graduation.udacity.com/confirm/UKVDSPCQ"
+      },
+      {
+        "school": "Carl-von-Ossietzky Universität Oldenburg",
+        "degree": "Bachelor of Science Wirtschaftsinformatik",
+        "graduated": "10-2015 - 01-2020",
+        "description": "Abschlussarbeit im Bereich Softwaretechnik: Synchronisierung verteilter Zugangsdaten mit MoConseMI"
       }
     ],
     "work": [
       {
-        "company": "example",
-        "title": "example",
-        "years": "example",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+        "company": "Lufthansa Industry Solutions TS GmbH",
+        "title": "IT-Berater",
+        "years": "2018 - 2020",
+        "description": "IT-Berater im Java/Spring/Cloud Umfeld"
       }
     ],
     "projects": [
       {
-        "role": "example",
-        "customer": "example",
+        "role": "IT-Berater, Software-Entwickler",
+        "customer": "Automobil Konzern",
         "location": "Oldenburg",
-        "title": "example",
-        "duration": "2019-2020",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+        "title": "Entwicklung einer Schnittstellenanwendung zur Prognose der Abgaswerte zukünftiger Fahrzeuge und Fahrzeugflotten nach dem neuen WLTP Standard",
+        "duration": "04-2020 - 12-2020",
+        "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (Jenkins, Bamboo)",
+        "tech": "Java 8, Spring, React, OracleDB, MySQL, SOAP, REST, Apache Tomcat, Jenkins, Atlassian Stack, SonarQube, IntelliJ, Gradle, Git"
+      },
+      {
+        "role": "IT-Berater, Software-Entwickler",
+        "customer": "NautilusLog GmbH",
+        "location": "Oldenburg",
+        "title": "Entwicklung eines elektronischen Logbuchs für die Containerschifffahrt",
+        "duration": "08-2019 - 04-2020",
+        "description": "•  Analyse von fachlichen und technischen Anforderungen\n•  Beratung der Kunden in Architektur- und Technologieentscheidungen\n•  Implementierung und Tests von Systemen zur Erfassung der    Gefahrenstoffe auf Containerschiffen\n•  Erstellung und Pflege technischer Dokumentation\n•  Fehleranalyse und –behebung in bestehenden Systemen",
+        "tech": "Java 8, Spring, Hibernate, Apache Lucene, Hibernate Search, MariaDB, Docker, Atlassian Stack, IntelliJ, Gradle, Git"
+      },
+      {
+        "role": "IT-Berater, Software-Entwickler, DevOps",
+        "customer": "Business Services",
+        "location": "Oldenburg",
+        "title": "Entwicklung einer Webplattform zur Erfassung von Adressdaten für die zentrale Poststelle",
+        "duration": "04-2019 - 12-2020",
+        "description": "•  Prozess- und Workflowanalyse der Kundenprozesse\n•  Konzeption und Planung der Systeme\n•  Analyse von fachlichen und technischen Anforderungen\n•  Implementierung und Testen der Systeme\n•  Intensive, kundenorientierte Zwischenpräsentationen zur Sicherstellung der Softwareergonomie\n•  Auslieferung der Software in einem Red Hat OpenShift Cluster mithilfe von Container-Technologien",
+        "tech": " Java 11, Spring, Angular, MariaDB, Docker, OpenShift, Jenkins, Artifactory, Microservices, Helm, Kubernetes, Atlassian Stack, IntelliJ, Gradle, Git"
       }
     ],
     "skills": [

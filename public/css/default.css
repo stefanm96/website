@@ -801,7 +801,15 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-
+.description {
+   margin: 0 0 0px 0;
+}
+.projectEntry {
+   margin: 0 0 30px 0;
+}
+.tech {
+   margin: 10px 0 0 0;
+}
 
 
 
