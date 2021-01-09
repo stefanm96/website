@@ -5,7 +5,7 @@
     "description": "Ihr Parnter in der Digitalisierung.",
     "image": "profilepic.png",
     "bio": "Seit 2018 unterstütze ich als IT-Berater verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Archiktektur, Entwicklung und dem Betrieb (DevOps).",
-    "contactmessage": "Noch Fragen? Dann hinterlassen Sie einfach eine Nachricht, ich werde schnellstmöglich antworten.",
+    "contactmessage": "Es wird aktuell an einem Kontaktformular gearbeitet. Bis dahin stehe ich Ihnen gerne über E-Mail, LinkedIn oder Instagram zur Verfügung. Vielen Dank!",
     "email": "stefanmichel96@gmail.com",
     "phone": "555-555-5555",
     "address": {
@@ -15,8 +15,13 @@
       "zip": "49393"
     },
     "website": "https://www.smiconsulting.de",
-    "resumedownload": "http://example.com",
+    "resumedownload": "/resume.pdf",
     "social": [
+      {
+        "name": "email",
+        "url": "mailto:stefanmichel96@gmail.com",
+        "className": "fa fa-envelope-o"
+      },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/stefan-michel-68952318a/",
@@ -38,23 +43,29 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "Udacity",
-        "degree": "Certified Cloud Developer",
-        "graduated": "02-2020 - 05-2020",
-        "description": "https://graduation.udacity.com/confirm/UKVDSPCQ"
+        "school": "FernUniversität in Hagen",
+        "degree": "Angestrebt M.Sc. Praktische Informatik",
+        "graduated": "12-2020 - derzeitig",
+        "description": ""
       },
       {
         "school": "Carl-von-Ossietzky Universität Oldenburg",
         "degree": "Bachelor of Science Wirtschaftsinformatik",
         "graduated": "10-2015 - 01-2020",
         "description": "Abschlussarbeit im Bereich Softwaretechnik: Synchronisierung verteilter Zugangsdaten mit MoConseMI"
+      },
+      {
+        "school": "Udacity",
+        "degree": "Certified Cloud Developer",
+        "graduated": "02-2020 - 05-2020",
+        "description": "Zertifikat: https://graduation.udacity.com/confirm/UKVDSPCQ"
       }
     ],
     "work": [
       {
         "company": "Lufthansa Industry Solutions TS GmbH",
         "title": "IT-Berater",
-        "years": "2018 - 2020",
+        "years": "2018 - derzeitig",
         "description": "IT-Berater im Java/Spring/Cloud Umfeld"
       }
     ],
@@ -89,12 +100,28 @@
     ],
     "skills": [
       {
-        "name": "Git",
+        "name": "Java",
+        "level": "90%"
+      },
+      {
+        "name": "Spring",
+        "level": "80%"
+      },
+      {
+        "name": "Cloud-Technologien",
+        "level": "80%"
+      },
+      {
+        "name": "DevOps",
+        "level": "80%"
+      },
+      {
+        "name": "HTML | CSS | React | Angular | JavaScript | TypeScript",
         "level": "60%"
       },
       {
-        "name": "example",
-        "level": "55%"
+        "name": "Linux",
+        "level": "60%"
       }
     ]
   },
