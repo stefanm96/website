@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "SMI Consulting",
-    "occupation": "(Your Occupation Here)",
+    "occupation": "Occupation",
     "description": "Ihr Parnter in der Digitalisierung.",
     "image": "profilepic.png",
     "bio": "Seit 2018 unterstütze ich als IT-Berater verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Archiktektur, Entwicklung und dem Betrieb (DevOps).",
@@ -9,7 +9,7 @@
     "email": "stefanmichel96@gmail.com",
     "phone": "555-555-5555",
     "address": {
-      "street": "(Your Street)",
+      "street": "street",
       "city": "Lohne",
       "state": "",
       "zip": "49393"
@@ -130,7 +130,7 @@
       {
         "title": "example",
         "category": "example",
-        "image": "canadian-wanderlust.jpg",
+        "image": "example.jpg",
         "url": "https://www.example.com"
       }
     ]
