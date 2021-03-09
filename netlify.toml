@@ -1,6 +1,12 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
+  from = "https://www.smiconsulting.de*"
+  to = "https://smiconsulting.de"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
