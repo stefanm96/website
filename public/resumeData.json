@@ -101,27 +101,27 @@
     "skills": [
       {
         "name": "Java",
-        "level": "90%"
+        "level": "100%"
       },
       {
         "name": "Spring",
-        "level": "80%"
+        "level": "100%"
       },
       {
         "name": "Cloud-Technologien",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "DevOps",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "HTML | CSS | React | Angular | JavaScript | TypeScript",
-        "level": "60%"
+        "level": "80%"
       },
       {
         "name": "Linux",
-        "level": "60%"
+        "level": "80%"
       }
     ]
   },
