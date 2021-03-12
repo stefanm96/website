@@ -1,7 +1,6 @@
 {
   "main": {
     "name": "SMI Consulting",
-    "occupation": "Occupation",
     "description": "Ihr Parnter in der Digitalisierung.",
     "image": "profilepic.png",
     "bio": "Seit 2018 unterstütze ich als IT-Berater verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Archiktektur, Entwicklung und dem Betrieb (DevOps).",
@@ -58,7 +57,8 @@
         "school": "Udacity",
         "degree": "Certified Cloud Developer",
         "graduated": "02-2020 - 05-2020",
-        "description": "Zertifikat: https://graduation.udacity.com/confirm/UKVDSPCQ"
+        "image": "cloud-developer-certificate.svg",
+        "imageUrl": "https://confirm.udacity.com/UKVDSPCQ"
       }
     ],
     "work": [
@@ -73,7 +73,7 @@
       {
         "role": "IT-Berater, Software-Entwickler",
         "customer": "Automobil Konzern",
-        "location": "Oldenburg",
+        "location": "Wolfsburg - Oldenburg",
         "title": "Entwicklung einer Schnittstellenanwendung zur Prognose der Abgaswerte zukünftiger Fahrzeuge und Fahrzeugflotten nach dem neuen WLTP Standard",
         "duration": "04-2020 - 03-2020",
         "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (Jenkins, Bamboo)",
@@ -81,8 +81,8 @@
       },
       {
         "role": "IT-Berater, Software-Entwickler",
-        "customer": "NautilusLog GmbH",
-        "location": "Oldenburg",
+        "customer": "Maritime Wirtschaft",
+        "location": "Hamburg - Oldenburg",
         "title": "Entwicklung eines elektronischen Logbuchs für die Containerschifffahrt",
         "duration": "08-2019 - 04-2020",
         "description": "•  Analyse von fachlichen und technischen Anforderungen\n•  Beratung der Kunden in Architektur- und Technologieentscheidungen\n•  Implementierung und Tests von Systemen zur Erfassung der    Gefahrenstoffe auf Containerschiffen\n•  Erstellung und Pflege technischer Dokumentation\n•  Fehleranalyse und –behebung in bestehenden Systemen",
@@ -91,7 +91,7 @@
       {
         "role": "IT-Berater, Software-Entwickler, DevOps",
         "customer": "Business Services",
-        "location": "Oldenburg",
+        "location": "Frankfurt a.M. - Oldenburg",
         "title": "Entwicklung einer Webplattform zur Erfassung von Adressdaten für die zentrale Poststelle",
         "duration": "04-2019 - 12-2020",
         "description": "•  Prozess- und Workflowanalyse der Kundenprozesse\n•  Konzeption und Planung der Systeme\n•  Analyse von fachlichen und technischen Anforderungen\n•  Implementierung und Testen der Systeme\n•  Intensive, kundenorientierte Zwischenpräsentationen zur Sicherstellung der Softwareergonomie\n•  Auslieferung der Software in einem Red Hat OpenShift Cluster mithilfe von Container-Technologien",
