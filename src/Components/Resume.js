@@ -27,7 +27,7 @@ class Resume extends Component {
           <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
           {education.description && <p>{education.description}</p>}
           {education.image &&
-            <a href={education.imageUrl}>
+            <a href={education.imageUrl} className="resumeImage">
               <img src={education.image} width="300" height="140" />
             </a>
           }
