@@ -3,6 +3,8 @@
     "name": "SMI Consulting",
     "description": "Ihr Parnter in der Digitalisierung.",
     "image": "profilepic.png",
+    "cert": "Oracle_Java_SE_11_Developer.jpg",
+    "certUrl": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75",
     "bio": "Seit 2018 unterstütze ich als IT-Berater verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Architektur, Entwicklung und dem Betrieb (DevOps).",
     "contactmessage": "Es wird aktuell an einem Kontaktformular gearbeitet. Bis dahin stehe ich Ihnen gerne über E-Mail, LinkedIn oder Instagram zur Verfügung. Vielen Dank!",
     "email": "info@smiconsulting.de",
@@ -54,6 +56,14 @@
         "description": "Abschlussarbeit im Bereich Softwaretechnik: Synchronisierung verteilter Zugangsdaten mit MoConseMI"
       },
       {
+        "school": "Oracle",
+        "degree": "Oracle Certified Professional: Java SE 11 Developer",
+        "graduated": "04-2021",
+        "description": "Zertifikat: 281901107OCPJSE11-J",
+        "image": "Oracle_Java_SE_11_Developer.jpg",
+        "imageUrl": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75"
+      },
+      {
         "school": "Udacity",
         "degree": "Certified Cloud Developer",
         "graduated": "02-2020 - 05-2020",
@@ -66,7 +76,7 @@
         "company": "Lufthansa Industry Solutions TS GmbH",
         "title": "IT-Berater",
         "years": "2018 - derzeitig",
-        "description": "IT-Berater im Java/Spring/Cloud Umfeld"
+        "description": "IT-Berater/Full-Stack Software Entwickler mit mehrjähriger Erfahrung im Java/Spring/Cloud Umfeld"
       }
     ],
     "projects": [

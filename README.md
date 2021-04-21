@@ -1,2 +1,2 @@
 # SMI Consulting Website
-### A ReactJS static website for smiconsulting.de
+### A static website for smiconsulting.de made with gatsby

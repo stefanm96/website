@@ -23,12 +23,12 @@ class Resume extends Component {
         </div>
       })
       var education = this.props.data.education.map(function (education) {
-        return <div key={education.school}><h3>{education.school}</h3>
+        return <div className="education-item" key={education.school}><h3>{education.school}</h3>
           <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
           {education.description && <p>{education.description}</p>}
           {education.image &&
             <a href={education.imageUrl} className="resumeImage">
-              <img src={education.image} width="300" height="140" />
+              <img src={education.image} width="250" height="140" />
             </a>
           }
         </div>

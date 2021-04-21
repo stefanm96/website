@@ -204,18 +204,29 @@ ul#nav li.current a { color: #00CCCC }
 #about p {
    line-height: 30px;
    color: #7A7A7A;
+   margin-bottom: 20px;
 }
 #about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
    border-radius: 100%;
 }
+
+#about .cert {
+   margin-top: 50px;
+}
+
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
    padding-top: 6px;
 }
+
+#about .pic-container {
+   height: 100%;
+   display: flex;
+   flex-flow: column;
+   align-content: space-between;
+}
+
 #about .main-col { padding-right: 5%; }
 #about .download .button {
    margin-top: 6px;
@@ -237,7 +248,7 @@ ul#nav li.current a { color: #00CCCC }
 
 #resume {
    background: #fff;
-   padding-top: 90px;
+   padding-top: 50px;
    padding-bottom: 72px;
    overflow: hidden;
 }
@@ -266,6 +277,11 @@ ul#nav li.current a { color: #00CCCC }
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
+
+#resume .education-item {
+   padding-bottom: 50px;
+}
+
 #resume .info {
    font: 16px/24px 'opensans-italic', serif;
    color: #6E7881;

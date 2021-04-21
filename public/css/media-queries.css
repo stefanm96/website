@@ -54,6 +54,11 @@
       height: 114px;
       margin-left: 12px;
    }
+   #about .cert {
+      width: 114px;
+      height: 114px;
+      margin-left: 12px;
+   }
    #about .contact-details { width: 50%; }
    #about .download { width: 50%; }
 
@@ -215,12 +220,27 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic {     
-      display: block;
+   #about .pic-container {     
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 20px;
    }
+
+   #about .profile-pic {
+      width: 120px;
+      height: 120px;
+      margin: 0px 12px 0px 12px;
+   }
+
+   #about .cert {
+      width: 120px;
+      height: 120px;
+      margin: 0px 12px 0px 12px;
+   }
+
    #about .download .button {
       width: 100%;
       text-align: center;
