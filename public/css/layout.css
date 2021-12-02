@@ -203,7 +203,7 @@ ul#nav li.current a { color: #00CCCC }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #dadada;
    margin-bottom: 20px;
 }
 #about .profile-pic {
@@ -955,7 +955,7 @@ call-to-action .button {
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #303030;
+   color: #8c8c8c;
    font-size: 14px;
    text-align: center;
    position: relative;

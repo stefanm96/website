@@ -19,7 +19,8 @@ class Footer extends Component {
            </ul>
 
            <ul className="copyright">
-              <li>&copy; Copyright 2021 SMI Consulting</li>
+              <li><a href="/imprint.html">Impressum</a></li>
+              <li>&copy; Copyright 2021 Stefan Michel</li>
            </ul>
 
         </div>

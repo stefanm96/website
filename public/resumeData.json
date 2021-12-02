@@ -1,13 +1,13 @@
 {
   "main": {
-    "name": "SMI Consulting",
+    "name": "Stefan Michel",
     "description": "Ihr Partner in der Digitalisierung.",
     "image": "profilepic.png",
     "cert": "Oracle_Java_SE_11_Developer.jpg",
     "certUrl": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75",
-    "bio": "Seit 2018 unterstütze ich als IT-Berater verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Architektur, Entwicklung und dem Betrieb (DevOps).",
-    "contactmessage": "Es wird aktuell an einem Kontaktformular gearbeitet. Bis dahin stehe ich Ihnen gerne über E-Mail, LinkedIn oder Instagram zur Verfügung. Vielen Dank!",
-    "email": "info@smiconsulting.de",
+    "bio": "Seit 2018 unterstütze ich als IT-Berater und Software Entwickler verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Architektur, Entwicklung und dem Betrieb (DevOps).",
+    "contactmessage": "Bei Anfragen stehe Ich Ihnen gerne über E-Mail, LinkedIn oder Instagram zur Verfügung. Vielen Dank!",
+    "email": "info@stefan-michel.com",
     "phone": "015678/401556",
     "address": {
       "street": "street",
@@ -20,7 +20,7 @@
     "social": [
       {
         "name": "email",
-        "url": "mailto:info@smiconsulting.de",
+        "url": "mailto:info@stefan-michel.com",
         "className": "fa fa-envelope-o"
       },
       {
@@ -46,7 +46,7 @@
       {
         "school": "FernUniversität in Hagen",
         "degree": "Angestrebt M.Sc. Praktische Informatik",
-        "graduated": "12-2020 - derzeitig",
+        "graduated": "04-2021 - derzeitig",
         "description": ""
       },
       {
@@ -73,19 +73,34 @@
     ],
     "work": [
       {
+        "company": "Otto (GmbH & Co KG)",
+        "title": "Software Entwickler",
+        "years": "2021 - derzeitig",
+        "description": ""
+      },
+      {
         "company": "Lufthansa Industry Solutions TS GmbH",
-        "title": "IT-Berater",
-        "years": "2018 - derzeitig",
-        "description": "IT-Berater/Full-Stack Software Entwickler mit mehrjähriger Erfahrung im Java/Spring/Cloud Umfeld"
+        "title": "IT-Berater / Software Enwickler",
+        "years": "2018 - 2021",
+        "description": ""
       }
     ],
     "projects": [
+      {
+        "role": "Software-Entwickler",
+        "customer": "Retourenlogisitik",
+        "location": "Hamburg",
+        "title": "Entwicklung einer Event-Driven Plattform für die Retourenlogistik in der AWS Cloud",
+        "duration": "07-2021 - derzeit",
+        "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (CircleCI)",
+        "tech": "Java 11, Spring, Terraform, Python, ReactJS, AWS, RDS, PostgreSQL, DynamoDB, SNS, SQS, REST, Apache Kafka, CircleCI, Atlassian Stack, IntelliJ, Gradle, Git"
+      },
       {
         "role": "IT-Berater, Software-Entwickler",
         "customer": "Automobil Konzern",
         "location": "Wolfsburg - Oldenburg",
         "title": "Entwicklung einer Schnittstellenanwendung zur Prognose der Abgaswerte zukünftiger Fahrzeuge und Fahrzeugflotten nach dem neuen WLTP Standard",
-        "duration": "04-2020 - 03-2020",
+        "duration": "04-2020 - 03-2021",
         "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (Jenkins, Bamboo)",
         "tech": "Java 8, Spring, React, OracleDB, MySQL, SOAP, REST, Apache Tomcat, Jenkins, Atlassian Stack, SonarQube, IntelliJ, Gradle, Git"
       },

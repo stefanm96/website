@@ -1,2 +1,2 @@
 # SMI Consulting Website
-### A static website for smiconsulting.de made with gatsby
+### A static website for stefan-michel.com made with gatsby
