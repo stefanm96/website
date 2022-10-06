@@ -8,15 +8,15 @@
     "bio": "Seit 2018 unterstütze ich als IT-Berater und Software Entwickler verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Architektur, Entwicklung und dem Betrieb (DevOps).",
     "contactmessage": "Bei Anfragen stehe Ich Ihnen gerne über E-Mail, LinkedIn oder Instagram zur Verfügung. Vielen Dank!",
     "email": "info@stefan-michel.com",
-    "phone": "015678/401556",
+    "phone": "+49 1517 4338957",
     "address": {
       "street": "street",
       "city": "Lohne",
       "state": "",
       "zip": "49393"
     },
-    "website": "https://www.smiconsulting.de",
-    "resumedownload": "/resume.pdf",
+    "website": "https://www.stefan-michel.com",
+    "resumedownload": "https://drive.google.com/file/d/1ve39Egv9PDe7V9H50QavN8pSLLGQ-z9j/view",
     "social": [
       {
         "name": "email",
@@ -73,14 +73,14 @@
     ],
     "work": [
       {
-        "company": "Otto (GmbH & Co KG)",
+        "company": "OTTO GmbH & Co KG",
         "title": "Software Entwickler",
         "years": "2021 - derzeitig",
         "description": ""
       },
       {
         "company": "Lufthansa Industry Solutions TS GmbH",
-        "title": "IT-Berater / Software Enwickler",
+        "title": "IT-Berater / Software Entwickler",
         "years": "2018 - 2021",
         "description": ""
       }
@@ -88,7 +88,7 @@
     "projects": [
       {
         "role": "Software-Entwickler",
-        "customer": "Retourenlogisitik",
+        "customer": "Retourenlogistik",
         "location": "Hamburg",
         "title": "Entwicklung einer Event-Driven Plattform für die Retourenlogistik in der AWS Cloud",
         "duration": "07-2021 - derzeit",
@@ -130,18 +130,18 @@
       },
       {
         "name": "Spring",
-        "level": "95%"
+        "level": "100%"
       },
       {
         "name": "Cloud-Technologien",
-        "level": "90%"
+        "level": "100%"
       },
       {
         "name": "DevOps",
         "level": "90%"
       },
       {
-        "name": "HTML | CSS | React | Angular | JavaScript | TypeScript",
+        "name": "Angular | React",
         "level": "80%"
       },
       {
