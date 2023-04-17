@@ -6,7 +6,7 @@
     "cert": "Oracle_Java_SE_11_Developer.jpg",
     "certUrl": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75",
     "bio": "Seit 2018 unterstütze ich als IT-Berater und Software Entwickler verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Architektur, Entwicklung und dem Betrieb (DevOps).",
-    "contactmessage": "Bei Anfragen stehe Ich Ihnen gerne über E-Mail, LinkedIn oder Instagram zur Verfügung. Vielen Dank!",
+    "contactmessage": "Bei Anfragen stehe Ich Ihnen gerne über E-Mail, LinkedIn zur Verfügung. Vielen Dank!",
     "email": "info@stefan-michel.com",
     "phone": "+49 1517 4338957",
     "address": {
@@ -27,11 +27,6 @@
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/stefan-michel-smi",
         "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/smi_consulting/",
-        "className": "fa fa-instagram"
       },
       {
         "name": "github",
@@ -93,7 +88,7 @@
         "title": "Entwicklung einer Event-Driven Plattform für die Retourenlogistik in der AWS Cloud",
         "duration": "07-2021 - derzeit",
         "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (CircleCI)",
-        "tech": "Java 11, Spring, Terraform, Python, ReactJS, AWS, RDS, PostgreSQL, DynamoDB, SNS, SQS, REST, Apache Kafka, CircleCI, Atlassian Stack, IntelliJ, Gradle, Git"
+        "tech": "Java 17, Spring, Terraform, Python, ReactJS, AWS, RDS, PostgreSQL, DynamoDB, SNS, SQS, REST, Apache Kafka, CircleCI, Atlassian Stack, IntelliJ, Gradle, Git"
       },
       {
         "role": "IT-Berater, Software-Entwickler",
