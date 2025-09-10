@@ -14,8 +14,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Preload critical fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"></noscript>
+    <link as="style"
+          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+          onload="this.onload=null;this.rel='stylesheet'" rel="preload">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+              rel="stylesheet">
+    </noscript>
 
     <!-- Tailwind config -->
     <script>
@@ -49,165 +54,177 @@
           name="description">
     <meta content="IT Beratung, Software Entwicklung, Java Entwickler, Spring Framework, Cloud Computing, DevOps, Hamburg, Oldenburg, Freelancer, IT Consultant"
           name="keywords">
-    <link rel="canonical" href="https://stefan-michel.com/">
-    
+    <link href="https://stefan-michel.com/" rel="canonical">
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://stefan-michel.com/">
-    <meta property="og:title" content="Stefan Michel - IT Beratung und Software Entwicklung">
-    <meta property="og:description" content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps. Professionelle Digitalisierung Ihrer Prozesse.">
-    <meta property="og:image" content="https://stefan-michel.com/images/profilepic.png">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:site_name" content="Stefan Michel IT-Beratung">
-    
+    <meta content="website" property="og:type">
+    <meta content="https://stefan-michel.com/" property="og:url">
+    <meta content="Stefan Michel - IT Beratung und Software Entwicklung" property="og:title">
+    <meta content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps. Professionelle Digitalisierung Ihrer Prozesse."
+          property="og:description">
+    <meta content="https://stefan-michel.com/images/profilepic.png" property="og:image">
+    <meta content="de_DE" property="og:locale">
+    <meta content="Stefan Michel IT-Beratung" property="og:site_name">
+
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://stefan-michel.com/">
-    <meta name="twitter:title" content="Stefan Michel - IT Beratung und Software Entwicklung">
-    <meta name="twitter:description" content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps.">
-    <meta name="twitter:image" content="https://stefan-michel.com/images/profilepic.png">
-    
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://stefan-michel.com/" name="twitter:url">
+    <meta content="Stefan Michel - IT Beratung und Software Entwicklung" name="twitter:title">
+    <meta content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps."
+          name="twitter:description">
+    <meta content="https://stefan-michel.com/images/profilepic.png" name="twitter:image">
+
     <!-- Additional SEO meta tags -->
-    <meta name="author" content="Stefan Michel">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="geo.region" content="DE-NI">
-    <meta name="geo.placename" content="Lohne, Oldenburg, Hamburg">
-    <meta name="geo.position" content="52.6667;8.2333">
+    <meta content="Stefan Michel" name="author">
+    <meta content="index, follow" name="robots">
+    <meta content="7 days" name="revisit-after">
+    <meta content="DE-NI" name="geo.region">
+    <meta content="Lohne, Oldenburg, Hamburg" name="geo.placename">
+    <meta content="52.6667;8.2333" name="geo.position">
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Stefan Michel",
-      "jobTitle": "IT-Berater und Software-Entwickler",
-      "description": "Freiberuflicher IT-Berater und Full-Stack Software-Entwickler spezialisiert auf Java, Spring, Cloud-Technologien und DevOps",
-      "url": "https://stefan-michel.com",
-      "email": "info@stefan-michel.com",
-      "telephone": "+49-1517-4338957",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "von-Dorgelo-Str. 9",
-        "addressLocality": "Lohne",
-        "addressRegion": "Niedersachsen",
-        "postalCode": "49393",
-        "addressCountry": "DE"
-      },
-      "alumniOf": [
         {
-          "@type": "EducationalOrganization",
-          "name": "Carl-von-Ossietzky Universität Oldenburg"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "FernUniversität in Hagen"
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stefan Michel",
+            "jobTitle": "IT-Berater und Software-Entwickler",
+            "description": "Freiberuflicher IT-Berater und Full-Stack Software-Entwickler spezialisiert auf Java, Spring, Cloud-Technologien und DevOps",
+            "url": "https://stefan-michel.com",
+            "email": "info@stefan-michel.com",
+            "telephone": "+49-1517-4338957",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "von-Dorgelo-Str. 9",
+                "addressLocality": "Lohne",
+                "addressRegion": "Niedersachsen",
+                "postalCode": "49393",
+                "addressCountry": "DE"
+            },
+            "alumniOf": [
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "Carl-von-Ossietzky Universität Oldenburg"
+                },
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "FernUniversität in Hagen"
+                }
+            ],
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "name": "Oracle Certified Professional: Java SE 11 Developer",
+                    "credentialCategory": "Professional Certification",
+                    "recognizedBy": {
+                        "@type": "Organization",
+                        "name": "Oracle"
+                    }
+                }
+            ],
+            "knowsAbout": [
+                "Java",
+                "Spring Framework",
+                "Cloud Computing",
+                "DevOps",
+                "Software Architecture",
+                "Full-Stack Development",
+                "AWS",
+                "React",
+                "Angular",
+                "Microservices"
+            ],
+            "workLocation": [
+                {
+                    "@type": "Place",
+                    "name": "Hamburg, Deutschland"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Oldenburg, Deutschland"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Deutschlandweit remote"
+                }
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/stefan-michel-smi",
+                "https://github.com/smi-consulting"
+            ],
+            "offers": {
+                "@type": "Service",
+                "serviceType": "IT Beratung und Software Entwicklung",
+                "description": "Professionelle IT-Beratung, Software-Entwicklung und DevOps-Services für Unternehmen jeder Größe",
+                "provider": {
+                    "@type": "Person",
+                    "name": "Stefan Michel"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Deutschland"
+                }
+            }
         }
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Oracle Certified Professional: Java SE 11 Developer",
-          "credentialCategory": "Professional Certification",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Oracle"
-          }
-        }
-      ],
-      "knowsAbout": [
-        "Java",
-        "Spring Framework",
-        "Cloud Computing",
-        "DevOps",
-        "Software Architecture",
-        "Full-Stack Development",
-        "AWS",
-        "React",
-        "Angular",
-        "Microservices"
-      ],
-      "workLocation": [
-        {
-          "@type": "Place",
-          "name": "Hamburg, Deutschland"
-        },
-        {
-          "@type": "Place",
-          "name": "Oldenburg, Deutschland"
-        },
-        {
-          "@type": "Place",
-          "name": "Deutschlandweit remote"
-        }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/stefan-michel-smi",
-        "https://github.com/smi-consulting"
-      ],
-      "offers": {
-        "@type": "Service",
-        "serviceType": "IT Beratung und Software Entwicklung",
-        "description": "Professionelle IT-Beratung, Software-Entwicklung und DevOps-Services für Unternehmen jeder Größe",
-        "provider": {
-          "@type": "Person",
-          "name": "Stefan Michel"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Deutschland"
-        }
-      }
-    }
     </script>
 </head>
 
 <body class="font-sans text-gray-900 leading-normal" x-data="portfolioApp" x-init="init()">
 
-<nav class="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md shadow-sm" x-data="{ mobileMenuOpen: false }">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md shadow-sm"
+     x-data="{ mobileMenuOpen: false }">
     <div class="max-w-6xl mx-auto px-4 sm:px-8 flex justify-between items-center">
         <div class="flex items-center gap-3">
-            <img alt="Stefan Michel IT-Beratung Logo - Professionelle Software-Entwicklung und DevOps" class="h-14 w-auto hover:scale-110 transition-transform duration-300"
+            <img alt="Stefan Michel IT-Beratung Logo - Professionelle Software-Entwicklung und DevOps"
+                 class="h-14 w-auto hover:scale-110 transition-transform duration-300"
                  src="images/logo.png">
             <a class="text-xl font-serif text-gray-900 hover:text-primary-600 transition-colors duration-300 tracking-tight hidden sm:block"
                href="#home">Stefan Michel</a>
         </div>
-        
+
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex space-x-2">
-            <li><a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+            <li>
+                <a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                    href="#about">Über mich</a></li>
-            <li><a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+            <li>
+                <a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                    href="#resume">Erfahrung</a></li>
-            <li><a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+            <li>
+                <a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                    href="#contact">Kontakt</a></li>
         </ul>
 
         <!-- Burger Menu Button -->
-        <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition-colors duration-300">
-            <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        <button @click="mobileMenuOpen = !mobileMenuOpen"
+                class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition-colors duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="!mobileMenuOpen">
+                <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"></path>
             </svg>
-            <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="mobileMenuOpen">
+                <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
             </svg>
         </button>
     </div>
 
     <!-- Mobile Navigation Menu -->
-    <div x-show="mobileMenuOpen" 
+    <div class="md:hidden bg-white border-t border-gray-200 shadow-lg"
+         x-show="mobileMenuOpen"
          x-transition:enter="transition ease-out duration-200"
-         x-transition:enter-start="opacity-0 scale-95"
          x-transition:enter-end="opacity-100 scale-100"
+         x-transition:enter-start="opacity-0 scale-95"
          x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100 scale-100"
          x-transition:leave-end="opacity-0 scale-95"
-         class="md:hidden bg-white border-t border-gray-200 shadow-lg">
+         x-transition:leave-start="opacity-100 scale-100">
         <div class="px-4 py-2 space-y-1">
-            <a @click="mobileMenuOpen = false" class="smoothscroll block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
+            <a @click="mobileMenuOpen = false"
+               class="smoothscroll block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
                href="#about">Über mich</a>
-            <a @click="mobileMenuOpen = false" class="smoothscroll block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
+            <a @click="mobileMenuOpen = false"
+               class="smoothscroll block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
                href="#resume">Erfahrung</a>
-            <a @click="mobileMenuOpen = false" class="smoothscroll block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
+            <a @click="mobileMenuOpen = false"
+               class="smoothscroll block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
                href="#contact">Kontakt</a>
         </div>
     </div>
@@ -218,9 +235,10 @@
          id="home">
     <div class="max-w-4xl mx-auto text-center">
         <div class="mb-8">
-            <div :style="resumeData.main?.image ? `background-image: url(images/${resumeData.main.image})` : 'background-color: #f3f4f6'"
+            <div :aria-label="'Profilbild von ' + (resumeData.main?.name || 'Stefan Michel')"
+                 :style="resumeData.main?.image ? `background-image: url(images/${resumeData.main.image})` : 'background-color: #f3f4f6'"
                  class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full bg-cover bg-center shadow-2xl border-4 border-white"
-                 role="img" :aria-label="'Profilbild von ' + (resumeData.main?.name || 'Stefan Michel')"></div>
+                 role="img"></div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-serif tracking-tight"
                 x-text="resumeData.main?.name || 'Stefan Michel'"></h1>
@@ -240,16 +258,17 @@
                 <a :href="resumeData.main?.certUrl || '#'"
                    class="inline-block hover:scale-105 transition-transform duration-300"
                    x-show="resumeData.main?.cert">
-                    <img :src="'images/' + (resumeData.main?.cert || '')" alt="Oracle Java SE 11 Developer Zertifizierung - Stefan Michel"
+                    <img :src="'images/' + (resumeData.main?.cert || '')"
+                         alt="Oracle Java SE 11 Developer Zertifizierung - Stefan Michel"
                          class="w-36 h-36 mx-auto rounded-lg object-cover"/>
                 </a>
             </div>
             <div class="lg:col-span-3">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 font-serif">Über mich - Ihr IT-Berater und Software-Entwickler</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 font-serif">Über mich</h2>
                 <p class="text-lg text-gray-700 leading-relaxed mb-8" x-text="resumeData.main?.bio || ''"></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-gray-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Kontaktdaten - IT-Beratung Stefan Michel</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Kontaktdaten</h3>
                         <div class="space-y-2 text-gray-700">
                             <p class="font-medium" x-text="resumeData.main?.name || ''"></p>
                             <p x-text="resumeData.main?.phone || ''"></p>
@@ -287,22 +306,18 @@
 
     <div class="max-w-6xl mx-auto px-4 sm:px-8">
         <div class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Berufserfahrung als IT-Berater</h2>
-            <div class="flex flex-wrap gap-6">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Berufserfahrung</h2>
+            <div class="grid-cols-1 gap-6">
                 <template :key="work.company" x-for="(work, index) in resumeData.resume?.work || []">
-                    <div class="mx-auto grow mb-16 items-start">
-                        <div class="pr-12">
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
-                                    <h3 class="text-lg font-semibold text-gray-900" x-text="work.company"></h3>
-                                    <span class="text-sm text-primary-600 font-medium mt-1 sm:mt-0"
-                                          x-text="work.years"></span>
-                                </div>
-                                <p class="text-gray-700 font-medium mb-2" x-text="work.title"></p>
-                                <p class="text-gray-600 text-sm" x-show="work.description"
-                                   x-text="work.description"></p>
-                            </div>
+                    <div class="bg-white mb-6 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                            <h3 class="text-lg font-semibold text-gray-900" x-text="work.company"></h3>
+                            <span class="text-sm text-primary-600 font-medium mt-1 sm:mt-0"
+                                  x-text="work.years"></span>
                         </div>
+                        <p class="text-gray-700 font-medium mb-2" x-text="work.title"></p>
+                        <p class="text-gray-600 text-sm" x-show="work.description"
+                           x-text="work.description"></p>
                     </div>
                 </template>
             </div>
@@ -310,7 +325,8 @@
 
         <!-- Projects -->
         <div class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Referenz-Projekte & Erfolgsgeschichten</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Referenz-Projekte &
+                Erfolgsgeschichten</h2>
             <div class="grid gap-6">
                 <template :key="project.customer" x-for="project in resumeData.resume?.projects || []">
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
@@ -349,7 +365,7 @@
 
         <!-- Education -->
         <div class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Ausbildung & Zertifizierungen</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Bildung & Zertifizierungen</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <template :key="education.school" x-for="education in resumeData.resume?.education || []">
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
@@ -358,13 +374,11 @@
                             <span class="text-primary-600 font-medium text-sm" x-text="education.graduated"></span>
                         </div>
                         <h4 class="text-gray-800 font-medium mb-3" x-text="education.degree"></h4>
-                        <p class="text-gray-700 text-sm mb-4" x-show="education.description"
-                           x-text="education.description"></p>
                         <div class="text-center" x-show="education.image">
                             <a :href="education.imageUrl || '#'"
                                class="inline-block hover:scale-105 transition-transform duration-300" target="_blank">
-                                <img :src="'images/' + (education.image || '')"
-                                     :alt="'Zertifikat: ' + (education.degree || 'Bildungsnachweis')"
+                                <img :alt="'Zertifikat: ' + (education.degree || 'Bildungsnachweis')"
+                                     :src="'images/' + (education.image || '')"
                                      class="w-20 h-20 object-cover rounded-lg shadow-md mx-auto mb-2"/>
                                 <span class="text-primary-600 text-sm font-medium">Zertifikat anzeigen</span>
                             </a>
@@ -379,28 +393,8 @@
 <!-- Contact Section -->
 <section class="py-16 bg-white" id="contact">
     <div class="max-w-4xl mx-auto px-4 sm:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Kontakt für IT-Beratung anfragen</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Kontakt</h2>
         <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
-<!--            <div class="bg-gray-50 p-6 rounded-lg">-->
-<!--                <form class="space-y-6">-->
-<!--                    <div>-->
-<!--                        <label class="block text-sm font-medium text-gray-700 mb-2" for="email">E-Mail</label>-->
-<!--                        <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" id="email" name="email"-->
-<!--                               placeholder="ihre.email@beispiel.de"-->
-<!--                               required type="email">-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <label class="block text-sm font-medium text-gray-700 mb-2" for="message">Nachricht</label>-->
-<!--                        <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" id="message" name="message"-->
-<!--                                  placeholder="Ihre Nachricht..."-->
-<!--                                  required rows="6"></textarea>-->
-<!--                    </div>-->
-<!--                    <button class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors duration-300 font-medium"-->
-<!--                            type="submit">-->
-<!--                        Nachricht senden-->
-<!--                    </button>-->
-<!--                </form>-->
-<!--            </div>-->
             <div class="flex items-center justify-center">
                 <p class="text-lg text-gray-700 leading-relaxed text-center"
                    x-text="resumeData.main?.contactmessage || 'Bei Anfragen stehe ich Ihnen gerne über E-Mail und LinkedIn zur Verfügung. Vielen Dank!'"></p>
@@ -443,7 +437,8 @@
         <div class="text-center">
             <a href="https://www.hitwebcounter.com" target="_blank">
                 <img alt="web counter"
-                     class="inline-block opacity-70 hover:opacity-100 transition-opacity" src="https://hitwebcounter.com/counter/counter.php?page=8047551&style=0024&nbdigits=5&type=page&initCount=0"
+                     class="inline-block opacity-70 hover:opacity-100 transition-opacity"
+                     src="https://hitwebcounter.com/counter/counter.php?page=8047551&style=0024&nbdigits=5&type=page&initCount=0"
                      title="Free Counter"/>
             </a>
         </div>
