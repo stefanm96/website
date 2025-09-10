@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     ------------------------------------------------------ */
 
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('#nav-wrap a');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
     
     const observerOptions = {
-        rootMargin: '-35% 0px -65% 0px', // Similar to waypoints offset
+        rootMargin: '-35% 0px -65% 0px',
         threshold: 0
     };
     
@@ -65,16 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute('id');
-                const activeLink = document.querySelector(`#nav-wrap a[href="#${id}"]`);
+                const activeLink = document.querySelector(`nav a[href="#${id}"]`);
                 
-                // Remove current class from all nav items
+                // Remove active classes from all nav items
                 navLinks.forEach(link => {
-                    link.parentElement.classList.remove('current');
+                    link.classList.remove('bg-primary-100', 'text-primary-700');
+                    link.classList.add('text-gray-700', 'hover:text-gray-900', 'hover:bg-gray-100');
                 });
                 
-                // Add current class to active nav item
+                // Add active classes to current nav item
                 if (activeLink) {
-                    activeLink.parentElement.classList.add('current');
+                    activeLink.classList.remove('text-gray-700', 'hover:text-gray-900', 'hover:bg-gray-100');
+                    activeLink.classList.add('bg-primary-100', 'text-primary-700');
                 }
             }
         });
@@ -105,32 +107,34 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', setHeaderHeight);
 
     /*----------------------------------------------------*/
-    /* Navigation Fade In/Out
+    /* Navigation Scroll Effect & Back to Top Button
     ------------------------------------------------------ */
 
     window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        const nav = document.querySelector('#nav-wrap');
-        
-        if (!header || !nav) return;
-        
-        const headerHeight = header.offsetHeight;
+        const nav = document.querySelector('nav');
+        const homeSection = document.querySelector('#home');
         const scrollY = window.scrollY;
-        const windowWidth = window.innerWidth;
         
-        if ((scrollY > headerHeight * 0.20) && (scrollY < headerHeight) && (windowWidth > 768)) {
-            nav.style.opacity = '0';
-            nav.style.visibility = 'hidden';
-            nav.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+        if (!nav) return;
+        
+        // Add shadow when scrolled
+        if (scrollY > 10) {
+            nav.classList.add('shadow-md');
+            nav.classList.remove('shadow-sm');
         } else {
-            if (scrollY < headerHeight * 0.20) {
-                nav.classList.remove('opaque');
-                nav.style.opacity = '1';
-                nav.style.visibility = 'visible';
-            } else {
-                nav.classList.add('opaque');
-                nav.style.opacity = '1';
-                nav.style.visibility = 'visible';
+            nav.classList.remove('shadow-md');
+            nav.classList.add('shadow-sm');
+        }
+        
+        // Back to Top Button visibility
+        if (homeSection) {
+            const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+            const showButton = scrollY > homeBottom - 100; // Show when 100px past home section
+            
+            // Update Alpine.js data
+            const backToTopDiv = document.querySelector('[x-data]');
+            if (backToTopDiv && backToTopDiv._x_dataStack) {
+                backToTopDiv._x_dataStack[0].showButton = showButton;
             }
         }
     });
@@ -158,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-btn');
-    const nav = document.querySelector('#nav-wrap');
+    const nav = document.querySelector('#nav-wrap, .modern-nav');
     
     if (mobileToggle && nav) {
         mobileToggle.addEventListener('click', function(e) {

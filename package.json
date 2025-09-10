@@ -2,7 +2,10 @@
   "name": "stefan-michel-website",
   "version": "0.3.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@axe-core/cli": "^4.10.2",
+    "puppeteer": "^24.19.0"
+  },
   "scripts": {
     "start": "npx serve . -l 3000",
     "serve": "npx serve . -l 8000"

@@ -7,79 +7,110 @@
   <meta name="theme-color" content="#000000">
   <link rel="manifest" href="manifest.json">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/fonts-minimal.css">
-  <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="css/vanilla-enhancements.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Open Sans', 'system-ui', 'sans-serif'],
+            'serif': ['Libre Baskerville', 'serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+            }
+          }
+        }
+      }
+    }
+  </script>
 
   <title>Impressum - Stefan Michel - IT Beratung</title>
   <meta name="description" content="Impressum und rechtliche Angaben für Stefan Michel IT-Beratung und Software Entwicklung">
 </head>
 
-<body>
+<body class="font-sans text-gray-900 leading-normal">
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Stefan Michel Logo" class="h-10 w-auto hover:scale-105 transition-transform duration-300">
+        <a href="/" class="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors duration-300 tracking-tight hidden sm:block">Stefan Michel</a>
+      </div>
+      <ul class="flex space-x-2">
+        <li><a href="/" class="px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300">Home</a></li>
+        <li><a href="/#about" class="px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300">Über mich</a></li>
+        <li><a href="/#resume" class="px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300">Resumé</a></li>
+        <li><a href="/#contact" class="px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300">Kontakt</a></li>
+        <li><a href="/imprint.html" class="px-4 py-2 bg-primary-100 text-primary-700 rounded-full font-semibold">Impressum</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Header Section -->
-  <header id="home" style="min-height: auto; padding: 60px 0;">
-    <nav id="nav-wrap">
-      <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-      <a class="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
-
-      <ul id="nav" class="nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/#about">Über mich</a></li>
-        <li><a href="/#resume">Resumé</a></li>
-        <li><a href="/#contact">Kontakt</a></li>
-        <li class="current"><a href="/imprint.html">Impressum</a></li>
-      </ul>
-    </nav>
-
-    <div class="row banner">
-      <div class="banner-text">
-        <h1 class="responsive-headline">Impressum</h1>
-        <h3>Rechtliche Angaben</h3>
-      </div>
+  <header class="bg-gradient-to-br from-primary-50 to-blue-50 py-16">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-8">
+      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 font-serif">Impressum</h1>
+      <h3 class="text-xl text-gray-600">Rechtliche Angaben</h3>
     </div>
   </header>
 
   <!-- Imprint Content -->
-  <section id="imprint" style="padding: 90px 0;">
-    <div class="row">
-      <div class="twelve columns">
+  <section id="imprint" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <div class="prose prose-lg max-w-none">
 
-        <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-        <p>Stefan Michel<br />
-        IT-Beratung<br />
-        von-Dorgelo-Str. 9<br />
-        49393 Lohne (Oldenburg)</p>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Angaben gemäß § 5 TMG</h2>
+        <p class="mb-6 leading-relaxed">
+          Stefan Michel<br />
+          IT-Beratung<br />
+          von-Dorgelo-Str. 9<br />
+          49393 Lohne (Oldenburg)
+        </p>
 
-        <h2>Kontakt</h2>
-        <p>Telefon: 015174338957<br />
-        E-Mail: info@stefan-michel.com</p>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Kontakt</h2>
+        <p class="mb-6 leading-relaxed">
+          Telefon: 015174338957<br />
+          E-Mail: info@stefan-michel.com
+        </p>
 
-        <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
-        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+        <p class="mb-6 leading-relaxed">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
-        <p><small>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></small></p>
+        <p class="text-sm text-gray-600">Quelle: <a href="https://www.e-recht24.de" class="text-primary-600 hover:text-primary-700">eRecht24</a></p>
 
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="row">
-      <div class="twelve columns">
-        <ul class="copyright">
-          <li><a href="/">Zur Startseite</a></li>
-          <li>&copy; Copyright 2025 Stefan Michel</li>
-        </ul>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
+        <a href="/" class="hover:text-white transition-colors duration-300">Zur Startseite</a>
+        <span>&copy; Copyright 2025 Stefan Michel</span>
       </div>
-      <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home">
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="fixed bottom-8 right-8">
+      <a href="#home" class="smoothscroll bg-primary-600 hover:bg-primary-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
           <path d="M16.59 15.41L12 10.83l-4.59 4.58L6 14l6-6 6 6-1.41 1.41z"/>
         </svg>
-      </a></div>
+      </a>
     </div>
   </footer>
 
