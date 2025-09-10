@@ -3,8 +3,6 @@
   "version": "0.3.0",
   "private": true,
   "dependencies": {
-    "@axe-core/cli": "^4.10.2",
-    "puppeteer": "^24.19.0"
   },
   "scripts": {
     "start": "npx serve . -l 3000",
