@@ -3,15 +3,13 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-This is a static website for SMI Consulting (stefan-michel.com) built with ReactJS. It's a single-page application with a portfolio/resume layout featuring sections for header, about, resume, contact, and footer.
+This is a static website for SMI Consulting (stefan-michel.com) built with Alpine.js. It's a single-page application with a portfolio/resume layout featuring sections for header, about, resume, contact, and footer. Recently migrated from React to Alpine.js for better performance and simpler maintenance.
 
 ## Commands
 
 ### Development
-- `npm start` - Start development server (default React Scripts)
-- `npm run build` - Create production build
-- `npm test` - Run tests with Jest/React Testing Library
-- `npm run eject` - Eject from Create React App (irreversible)
+- `npm start` - Start development server on port 3000 (serves static files)
+- `npm run serve` - Start server on port 8000 (alternative port)
 
 ### Deployment
 The site is configured for Netlify deployment with `netlify.toml` configuration that handles:
@@ -22,20 +20,28 @@ The site is configured for Netlify deployment with `netlify.toml` configuration 
 ## Architecture
 
 ### Core Structure
-- **Main App** (`src/App.js`): Main component that fetches resume data from `/resumeData.json` using jQuery AJAX
-- **Components** (`src/Components/`): Individual section components (Header, About, Resume, Contact, Footer, Portfolio, Testimonials)
-- **Data Source**: Resume content is loaded dynamically from `public/resumeData.json`
+- **Static HTML** (`index.html`): Single HTML file with all sections using Alpine.js directives
+- **Alpine.js App** (`app.js`): Data management and reactivity using Alpine.js framework
+- **Data Source**: Resume content loaded from `resumeData.json` via fetch API
+- **Static Assets**: CSS, JS, images served directly from root directory
 
 ### Key Dependencies
-- React 16.2.0 (class-based components)
-- jQuery 3.2.1 (for AJAX calls)
-- react-ga 2.3.5 (Google Analytics integration)
+- Alpine.js 3.x (15kb reactive framework)
+- Vanilla JavaScript (5.8kb for all interactive features)
 
 ### Data Flow
-The app fetches all content from `resumeData.json` on mount and passes sections to respective components via props. The JSON contains structured data for personal info, resume, portfolio, and testimonials.
+Alpine.js `portfolioApp` component fetches all content from `resumeData.json` on initialization and provides reactive data binding throughout the HTML template. No build process required.
+
+### Migration Notes
+- Migrated from React to Alpine.js for simplicity and better performance
+- Migrated from jQuery to vanilla JavaScript (reduced JS payload by 94%)
+- Removed Google Analytics tracking (react-ga)
+- Static file serving instead of webpack build process
+- Vue-like syntax with Alpine.js directives (x-data, x-text, x-for, etc.)
+- Modern browser APIs: Intersection Observer, CSS scroll-behavior, clamp()
 
 ### Styling
-Uses custom CSS with Font Awesome icons, web fonts (OpenSans, Libre Baskerville), and responsive layout styles located in `public/css/`.
+Uses custom CSS with Font Awesome icons, web fonts (OpenSans, Libre Baskerville), and responsive layout styles located in `css/`.
 
 ## Content Management
-To update site content, modify `public/resumeData.json` which contains all text, contact information, skills, experience, and social links.
+To update site content, modify `resumeData.json` which contains all text, contact information, skills, experience, and social links.
