@@ -13,7 +13,6 @@ This is a static website for SMI Consulting (stefan-michel.com) built with Alpin
 
 ### Deployment
 The site is configured for Netlify deployment with `netlify.toml` configuration that handles:
-- Domain redirects (www.smiconsulting.de → smiconsulting.de)
 - SPA routing fallback to index.html
 - CORS headers
 
@@ -22,7 +21,7 @@ The site is configured for Netlify deployment with `netlify.toml` configuration 
 ### Core Structure
 - **Static HTML** (`index.html`): Single HTML file with all sections using Alpine.js directives
 - **Alpine.js App** (`app.js`): Data management and reactivity using Alpine.js framework
-- **Data Source**: Resume content loaded from `resumeData.json` via fetch API
+- **Data Source**: Resume content assembled from JSON section files in `data/` (resume sub-sections live in `data/resume/`) via fetch API
 - **Static Assets**: CSS, JS, images served directly from root directory
 
 ### Key Dependencies
@@ -30,7 +29,7 @@ The site is configured for Netlify deployment with `netlify.toml` configuration 
 - Vanilla JavaScript (5.8kb for all interactive features)
 
 ### Data Flow
-Alpine.js `portfolioApp` component fetches all content from `resumeData.json` on initialization and provides reactive data binding throughout the HTML template. No build process required.
+Alpine.js `portfolioApp` component fetches all content from the JSON section files in `data/` (including individual resume sub-files) on initialization, assembles them into a single object, and provides reactive data binding throughout the HTML template. No build process required.
 
 ### Migration Notes
 - Migrated from React to Alpine.js for simplicity and better performance
@@ -44,4 +43,4 @@ Alpine.js `portfolioApp` component fetches all content from `resumeData.json` on
 Uses custom CSS with Font Awesome icons, web fonts (OpenSans, Libre Baskerville), and responsive layout styles located in `css/`.
 
 ## Content Management
-To update site content, modify `resumeData.json` which contains all text, contact information, skills, experience, and social links.
+To update site content, modify the relevant JSON files in `data/` (and `data/resume/` for resume specifics) which contain all text, contact information, skills, experience, and social links.

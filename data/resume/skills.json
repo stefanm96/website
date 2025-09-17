@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Java",
+    "level": "100%"
+  },
+  {
+    "name": "Spring",
+    "level": "100%"
+  },
+  {
+    "name": "Rust",
+    "level": "100%"
+  },
+  {
+    "name": "Cloud-Technologien",
+    "level": "100%"
+  },
+  {
+    "name": "DevOps",
+    "level": "90%"
+  },
+  {
+    "name": "Angular",
+    "level": "80%"
+  },
+  {
+    "name": "React",
+    "level": "80%"
+  },
+  {
+    "name": "VueJS",
+    "level": "80%"
+  },
+  {
+    "name": "Linux",
+    "level": "80%"
+  }
+]

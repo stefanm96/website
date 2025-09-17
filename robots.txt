@@ -3,7 +3,6 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://stefan-michel.com/sitemap.xml
-Sitemap: https://smiconsulting.de/sitemap.xml
 
 # Disallow access to sensitive areas
 Disallow: /js/

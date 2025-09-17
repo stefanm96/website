@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {
+      "title": "example",
+      "category": "example",
+      "image": "example.jpg",
+      "url": "https://www.example.com"
+    }
+  ]
+}

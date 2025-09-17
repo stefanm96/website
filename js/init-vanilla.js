@@ -1,14 +1,4 @@
-/*-----------------------------------------------------------------------------------
-/*
-/* Vanilla JS Init - No jQuery Required
-/*
------------------------------------------------------------------------------------*/
-
 document.addEventListener('DOMContentLoaded', function() {
-
-    /*----------------------------------------------------*/
-    /* Responsive Text Sizing (FitText replacement)
-    ------------------------------------------------------ */
     
     function fitText() {
         const headlines = document.querySelectorAll('h1.responsive-headline');
@@ -23,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial call and resize listener
     setTimeout(fitText, 100);
     window.addEventListener('resize', fitText);
-
-    /*----------------------------------------------------*/
-    /* Smooth Scrolling
-    ------------------------------------------------------ */
 
     document.querySelectorAll('.smoothscroll').forEach(link => {
         link.addEventListener('click', function(e) {
@@ -48,10 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    /*----------------------------------------------------*/
-    /* Navigation Highlighting (Waypoints replacement)
-    ------------------------------------------------------ */
 
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -86,10 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    /*----------------------------------------------------*/
-    /* Header Height Management
-    ------------------------------------------------------ */
-
     function setHeaderHeight() {
         const header = document.querySelector('header');
         if (header) {
@@ -105,10 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial call and resize listener
     setHeaderHeight();
     window.addEventListener('resize', setHeaderHeight);
-
-    /*----------------------------------------------------*/
-    /* Navigation Scroll Effect & Back to Top Button
-    ------------------------------------------------------ */
 
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('nav');
@@ -139,10 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    /*----------------------------------------------------*/
-    /* Go to Top Button
-    ------------------------------------------------------ */
-
     const goTopBtn = document.querySelector('#go-top a');
     if (goTopBtn) {
         goTopBtn.addEventListener('click', function(e) {
@@ -155,10 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
-
-/*----------------------------------------------------*/
-/* Mobile Navigation Toggle (if needed)
------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-btn');
