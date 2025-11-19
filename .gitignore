@@ -30,3 +30,9 @@ yarn-error.log*
 .env.production.local
 /feedback/
 /feedback-script.js
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

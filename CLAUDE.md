@@ -44,3 +44,6 @@ Uses custom CSS with Font Awesome icons, web fonts (OpenSans, Libre Baskerville)
 
 ## Content Management
 To update site content, modify the relevant JSON files in `data/` (and `data/resume/` for resume specifics) which contain all text, contact information, skills, experience, and social links.
+
+## Claude Code Specific
+- use the playwright mcp to verify changes in the UI

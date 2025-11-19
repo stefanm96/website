@@ -2,11 +2,13 @@
   "name": "stefan-michel-website",
   "version": "0.3.0",
   "private": true,
-  "dependencies": {
-  },
   "scripts": {
     "start": "npx serve . -l 3000",
-    "serve": "npx serve . -l 8000"
+    "serve": "npx serve . -l 8000",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug"
   },
   "browserslist": {
     "production": [
@@ -19,5 +21,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
   }
 }

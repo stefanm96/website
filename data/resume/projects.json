@@ -5,6 +5,12 @@
     "location": "Hamburg",
     "title": "Entwicklung einer Event-Driven Plattform für die Retourenlogistik in der AWS Cloud",
     "duration": "07-2021 - derzeit",
+    "highlights": [
+      "Event-Driven Microservices mit Apache Kafka & AWS (SNS/SQS)",
+      "Infrastructure as Code mit Terraform für Cloud-Ressourcen",
+      "CI/CD Pipeline Automatisierung mit CircleCI",
+      "BDD & JUnit Tests für hohe Code-Qualität"
+    ],
     "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (CircleCI)",
     "tech": "Java 17, Spring, Terraform, Python, ReactJS, AWS, RDS, PostgreSQL, DynamoDB, SNS, SQS, REST, Apache Kafka, CircleCI, Atlassian Stack, IntelliJ, Gradle, Git"
   },
@@ -14,6 +20,12 @@
     "location": "Wolfsburg - Oldenburg",
     "title": "Entwicklung einer Schnittstellenanwendung zur Prognose der Abgaswerte zukünftiger Fahrzeuge und Fahrzeugflotten nach dem neuen WLTP Standard",
     "duration": "04-2020 - 03-2021",
+    "highlights": [
+      "WLTP-Prognose-Algorithmen für Fahrzeugflotten implementiert",
+      "REST & SOAP Schnittstellen für Legacy-Integration",
+      "Automatisierte Testabdeckung mit BDD und JUnit",
+      "CI/CD mit Jenkins und Bamboo"
+    ],
     "description": "•  Entwicklung von Softwarelösungen\n•  Beschreibung und Analyse von User-Storys und Features\n•  Erstellung und Pflege technischer Dokumentation\n•  Implementierung automatisierter Tests (BDD und JUnit)\n•  Konzeption von Datenstrukturen\n•  Fehleranalyse und Fehlerbehebung\n•  Kundennahe Kommunikation zur Abstimmung technischer Konzepte und Ideen\n•  Präsentation von erreichten Zwischenzielen\n•  Erweiterung automatisierter Prozesse in der Build-Pipeline (Jenkins, Bamboo)",
     "tech": "Java 8, Spring, React, OracleDB, MySQL, SOAP, REST, Apache Tomcat, Jenkins, Atlassian Stack, SonarQube, IntelliJ, Gradle, Git"
   },
@@ -23,6 +35,12 @@
     "location": "Hamburg - Oldenburg",
     "title": "Entwicklung eines elektronischen Logbuchs für die Containerschifffahrt",
     "duration": "08-2019 - 04-2020",
+    "highlights": [
+      "Gefahrstoff-Erfassungssystem für Containerschiffe",
+      "Volltextsuche mit Apache Lucene & Hibernate Search",
+      "Architektur- und Technologieberatung",
+      "Docker-basierte Deployment-Lösung"
+    ],
     "description": "•  Analyse von fachlichen und technischen Anforderungen\n•  Beratung der Kunden in Architektur- und Technologieentscheidungen\n•  Implementierung und Tests von Systemen zur Erfassung der    Gefahrenstoffe auf Containerschiffen\n•  Erstellung und Pflege technischer Dokumentation\n•  Fehleranalyse und –behebung in bestehenden Systemen",
     "tech": "Java 8, Spring, Hibernate, Apache Lucene, Hibernate Search, MariaDB, Docker, Atlassian Stack, IntelliJ, Gradle, Git"
   },
@@ -32,6 +50,12 @@
     "location": "Frankfurt a.M. - Oldenburg",
     "title": "Entwicklung einer Webplattform zur Erfassung von Adressdaten für die zentrale Poststelle",
     "duration": "04-2019 - 12-2020",
+    "highlights": [
+      "Full-Stack Entwicklung mit Angular & Spring",
+      "Kubernetes/OpenShift Deployment mit Helm Charts",
+      "Microservices-Architektur konzipiert und umgesetzt",
+      "Kundenorientierte Zwischenpräsentationen"
+    ],
     "description": "•  Prozess- und Workflowanalyse der Kundenprozesse\n•  Konzeption und Planung der Systeme\n•  Analyse von fachlichen und technischen Anforderungen\n•  Implementierung und Testen der Systeme\n•  Intensive, kundenorientierte Zwischenpräsentationen zur Sicherstellung der Softwareergonomie\n•  Auslieferung der Software in einem Red Hat OpenShift Cluster mithilfe von Container-Technologien",
     "tech": " Java 11, Spring, Angular, MariaDB, Docker, OpenShift, Jenkins, Artifactory, Microservices, Helm, Kubernetes, Atlassian Stack, IntelliJ, Gradle, Git"
   }
