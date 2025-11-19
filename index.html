@@ -325,11 +325,11 @@
         <div class="mb-16">
             <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Referenz-Projekte &
                 Erfolgsgeschichten</h2>
-            <div class="relative ml-28 md:ml-40">
-                <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-primary-300"></div>
+            <div class="relative ml-0 sm:ml-28 md:ml-40">
+                <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-primary-300 hidden sm:block"></div>
                 <template :key="project.customer" x-for="project in resumeData.resume?.projects || []">
-                    <div class="relative pl-10 pb-10 last:pb-0">
-                        <div class="absolute left-0 top-2 -translate-x-full -ml-2 bg-primary-100 text-primary-700 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap shadow-sm border border-primary-200" x-text="project.duration"></div>
+                    <div class="relative pl-0 sm:pl-10 pb-8 sm:pb-10 last:pb-0">
+                        <div class="static sm:absolute sm:left-0 sm:top-2 sm:-translate-x-full sm:-ml-2 mb-2 sm:mb-0 inline-block bg-primary-100 text-primary-700 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap shadow-sm border border-primary-200" x-text="project.duration"></div>
                         <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 border-l-4 border-primary-500">
                             <div class="mb-3">
                                 <h3 class="text-xl font-semibold text-gray-900" x-text="project.customer"></h3>
