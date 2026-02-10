@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('Visual Regression', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
-    await page.waitForFunction(() => window.Alpine !== undefined);
     await page.waitForTimeout(1000);
   });
 

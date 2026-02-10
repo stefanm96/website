@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('Navigation', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
-    await page.waitForFunction(() => window.Alpine !== undefined);
   });
 
   test('desktop navigation links are visible and correct', async ({ page, isMobile }) => {

@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('Resume Section', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
-    await page.waitForFunction(() => window.Alpine !== undefined);
   });
 
   test('skills section displays all skills', async ({ page }) => {

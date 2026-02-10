@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('Data Loading', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
-    await page.waitForFunction(() => window.Alpine !== undefined);
   });
 
   test('page loads with correct title', async ({ page }) => {
@@ -73,7 +72,8 @@ test.describe('Data Loading', () => {
   });
 
   test('copyright notice displays current year', async ({ page }) => {
-    const copyright = page.getByText(/© Copyright 2025 Stefan Michel/);
+    const year = new Date().getFullYear();
+    const copyright = page.getByText(new RegExp(`© Copyright ${year} Stefan Michel`));
     await expect(copyright).toBeVisible();
   });
 

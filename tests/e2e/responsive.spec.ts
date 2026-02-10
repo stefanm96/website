@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('Responsive Design', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
-    await page.waitForFunction(() => window.Alpine !== undefined);
   });
 
   test('desktop layout shows horizontal navigation', async ({ page, isMobile }) => {

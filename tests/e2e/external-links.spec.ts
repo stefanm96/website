@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('External Links', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
-    await page.waitForFunction(() => window.Alpine !== undefined);
   });
 
   test('Oracle certification badge links to valid URL', async ({ page }) => {
