@@ -3,673 +3,448 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="rgb(0 106 106)" name="theme-color">
-    <link href="manifest.json" rel="manifest">
-    <link href="favicon.ico" rel="shortcut icon">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0c0b">
 
-    <!-- Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Stefan Michel — IT-Beratung &amp; Software-Engineering | SMI Consulting</title>
+    <meta name="description"
+          content="Freiberuflicher Software-Engineer & IT-Berater. Seit 2018 baue ich für Unternehmen vom Startup bis zum Konzern Systeme, die in Produktion bestehen — Java, Spring, Cloud & DevOps.">
+    <link rel="canonical" href="https://www.stefan-michel.com/">
 
-    <!-- Preload critical fonts -->
-    <link as="style"
-          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
-          onload="this.onload=null;this.rel='stylesheet'" rel="preload">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
-              rel="stylesheet">
-    </noscript>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stefan Michel — IT-Beratung & Software-Engineering">
+    <meta property="og:description"
+          content="Systeme, die in Produktion bestehen. Java, Spring, Cloud-Architektur & DevOps — seit 2018 für Startups bis Konzerne.">
+    <meta property="og:url" content="https://www.stefan-michel.com/">
+    <meta property="og:image" content="https://www.stefan-michel.com/images/profilepic.png">
 
-    <!-- Tailwind config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Open Sans', 'system-ui', 'sans-serif'],
-                        'serif': ['Libre Baskerville', 'serif'],
-                    },
-                    colors: {
-                        primary: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            200: '#99f6e4',
-                            300: '#5eead4',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                            700: '#0f766e',
-                        }
-                    },
-                    animation: {
-                        'shimmer': 'shimmer 0.5s ease-in-out',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.ico">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Fraunces:ital,opsz,wght@1,9..144,400..600&family=JetBrains+Mono:wght@400;500;600&display=swap">
 
-    <title>Stefan Michel - IT Beratung und Software Entwicklung | Java Spring Cloud DevOps</title>
-    <meta content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps. Professionelle Digitalisierung Ihrer Prozesse in Hamburg, Oldenburg und deutschlandweit. ✓ Zertifiziert ✓ Erfahren ✓ Lösungsorientiert"
-          name="description">
-    <meta content="IT Beratung, Software Entwicklung, Java Entwickler, Spring Framework, Cloud Computing, DevOps, Hamburg, Oldenburg, Freelancer, IT Consultant"
-          name="keywords">
-    <link href="https://stefan-michel.com/" rel="canonical">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Open Graph / Facebook -->
-    <meta content="website" property="og:type">
-    <meta content="https://stefan-michel.com/" property="og:url">
-    <meta content="Stefan Michel - IT Beratung und Software Entwicklung" property="og:title">
-    <meta content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps. Professionelle Digitalisierung Ihrer Prozesse."
-          property="og:description">
-    <meta content="https://stefan-michel.com/images/profilepic.png" property="og:image">
-    <meta content="de_DE" property="og:locale">
-    <meta content="Stefan Michel IT-Beratung" property="og:site_name">
-
-    <!-- Twitter -->
-    <meta content="summary_large_image" name="twitter:card">
-    <meta content="https://stefan-michel.com/" name="twitter:url">
-    <meta content="Stefan Michel - IT Beratung und Software Entwicklung" name="twitter:title">
-    <meta content="Erfahrener freiberuflicher IT-Berater und Full-Stack Software-Entwickler für Java, Spring, Cloud und DevOps."
-          name="twitter:description">
-    <meta content="https://stefan-michel.com/images/profilepic.png" name="twitter:image">
-
-    <!-- Additional SEO meta tags -->
-    <meta content="Stefan Michel" name="author">
-    <meta content="index, follow" name="robots">
-    <meta content="7 days" name="revisit-after">
-    <meta content="DE-NI" name="geo.region">
-    <meta content="Lohne, Oldenburg, Hamburg" name="geo.placename">
-    <meta content="52.6667;8.2333" name="geo.position">
-    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Stefan Michel",
-            "jobTitle": "IT-Berater und Software-Entwickler",
-            "description": "Freiberuflicher IT-Berater und Full-Stack Software-Entwickler spezialisiert auf Java, Spring, Cloud-Technologien und DevOps",
-            "url": "https://stefan-michel.com",
-            "email": "info@stefan-michel.com",
-            "telephone": "+49-1517-4338957",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "DE"
-            },
-            "alumniOf": [
-                {
-                    "@type": "EducationalOrganization",
-                    "name": "Carl-von-Ossietzky Universität Oldenburg"
-                },
-                {
-                    "@type": "EducationalOrganization",
-                    "name": "FernUniversität in Hagen"
-                }
-            ],
-            "hasCredential": [
-                {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "Oracle Certified Professional: Java SE 11 Developer",
-                    "credentialCategory": "Professional Certification",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "Oracle"
-                    }
-                }
-            ],
-            "knowsAbout": [
-                "Java",
-                "Spring Framework",
-                "Cloud Computing",
-                "DevOps",
-                "Software Architecture",
-                "Full-Stack Development",
-                "AWS",
-                "React",
-                "Angular",
-                "Microservices"
-            ],
-            "workLocation": [
-                {
-                    "@type": "Place",
-                    "name": "Hamburg, Deutschland"
-                },
-                {
-                    "@type": "Place",
-                    "name": "Oldenburg, Deutschland"
-                },
-                {
-                    "@type": "Place",
-                    "name": "Deutschlandweit remote"
-                }
-            ],
-            "sameAs": [
-                "https://www.linkedin.com/in/stefan-michel-smi",
-                "https://github.com/smi-consulting"
-            ],
-            "offers": {
-                "@type": "Service",
-                "serviceType": "IT Beratung und Software Entwicklung",
-                "description": "Professionelle IT-Beratung, Software-Entwicklung und DevOps-Services für Unternehmen jeder Größe",
-                "provider": {
-                    "@type": "Person",
-                    "name": "Stefan Michel"
-                },
-                "areaServed": {
-                    "@type": "Country",
-                    "name": "Deutschland"
-                }
-            }
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Stefan Michel",
+      "jobTitle": "IT-Berater & Software-Engineer",
+      "url": "https://www.stefan-michel.com",
+      "email": "mailto:info@stefan-michel.com",
+      "image": "https://www.stefan-michel.com/images/profilepic.png",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "49393",
+        "addressLocality": "Lohne",
+        "addressCountry": "DE"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/stefan-michel-smi",
+        "https://github.com/smi-consulting"
+      ],
+      "knowsAbout": ["Java", "Spring", "Rust", "AWS", "Kubernetes", "Terraform", "Apache Kafka", "DevOps", "Software-Architektur"]
+    }
     </script>
 </head>
 
-<body class="font-sans text-gray-900 leading-normal">
+<body>
+<div class="grain" aria-hidden="true"></div>
 
-<nav class="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md shadow-sm" id="main-nav">
-    <div class="max-w-6xl mx-auto px-4 sm:px-8 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <img alt="Stefan Michel IT-Beratung Logo - Professionelle Software-Entwicklung und DevOps"
-                 class="h-14 w-auto hover:scale-110 transition-transform duration-300"
-                 src="images/logo.png">
-            <a class="text-xl font-serif text-gray-900 hover:text-primary-600 transition-colors duration-300 tracking-tight hidden sm:block"
-               href="#home">Stefan Michel</a>
-        </div>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-        <!-- Desktop Navigation -->
-        <ul class="hidden md:flex space-x-2">
-            <li>
-                <a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-                   href="#about">Über mich</a></li>
-            <li>
-                <a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-                   href="#resume">Erfahrung</a></li>
-            <li>
-                <a class="smoothscroll font-serif px-4 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-                   href="#contact">Kontakt</a></li>
-        </ul>
-
-        <!-- Burger Menu Button -->
-        <button id="mobile-menu-btn"
-                class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition-colors duration-300">
-            <svg id="burger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"></path>
-            </svg>
-            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-            </svg>
+<header class="site-header" id="header">
+    <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="SMI Consulting — Startseite">
+            smi consulting
+        </a>
+        <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+            <a href="#profil">Profil</a>
+            <a href="#leistungen">Leistungen</a>
+            <a href="#projekte">Projekte</a>
+            <a href="#werdegang">Werdegang</a>
+            <a class="nav-cta" href="#kontakt">Kontakt</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav"
+                aria-label="Menü öffnen">
+            <span></span><span></span>
         </button>
     </div>
+</header>
 
-    <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 shadow-lg hidden">
-        <div class="px-4 py-2 space-y-1">
-            <a class="smoothscroll mobile-menu-link block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
-               href="#about">Über mich</a>
-            <a class="smoothscroll mobile-menu-link block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
-               href="#resume">Erfahrung</a>
-            <a class="smoothscroll mobile-menu-link block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-serif font-medium transition-all duration-300"
-               href="#contact">Kontakt</a>
-        </div>
-    </div>
-</nav>
+<main id="main">
 
-<!-- Modern Hero Section -->
-<section class="bg-gradient-to-br from-primary-50 to-blue-50 min-h-screen flex items-center justify-center px-4 sm:px-8"
-         id="home">
-    <div class="max-w-4xl mx-auto text-center">
-        <div class="mb-8">
-            <div aria-label="Profilbild von Stefan Michel"
-                 style="background-image: url(images/profilepic.png)"
-                 class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full bg-cover bg-center shadow-2xl border-4 border-white"
-                 role="img"></div>
-
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-serif tracking-tight">Stefan Michel</h1>
-            <p class="text-xl sm:text-2xl text-primary-700 mb-4 font-medium">Freelance IT Consultant &amp; Full-Stack Software Developer</p>
-            <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Ihr Partner in der Digitalisierung.</p>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section class="py-16 bg-white" id="about">
-    <div class="max-w-6xl mx-auto px-4 sm:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            <div class="lg:col-span-1 text-center">
-                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75"
-                   class="inline-block hover:scale-105 transition-transform duration-300">
-                    <img src="images/Oracle_Java_SE_11_Developer.jpg"
-                         alt="Oracle Java SE 11 Developer Zertifizierung - Stefan Michel"
-                         class="w-36 h-36 mx-auto rounded-lg object-cover"/>
-                </a>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-inner">
+            <p class="availability reveal">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                Verfügbar für neue Projekte
+            </p>
+            <p class="kicker reveal" style="--d:.05s">Stefan Michel · IT-Beratung &amp; Software-Engineering</p>
+            <h1 class="hero-title reveal" style="--d:.1s">
+                Systeme, die in<br>Produktion <em>bestehen.</em>
+            </h1>
+            <p class="hero-lead reveal" style="--d:.2s">
+                Seit 2018 unterstütze ich Unternehmen vom Startup bis zum Konzern —
+                mit tiefer Expertise in Java, Spring, Cloud-Architektur und DevOps.
+            </p>
+            <div class="hero-actions reveal" style="--d:.3s">
+                <a class="btn btn-primary" href="#kontakt">Projekt anfragen <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-ghost" href="#projekte">Ausgewählte Projekte</a>
             </div>
-            <div class="lg:col-span-3">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 font-serif">Über mich</h2>
-                <p class="text-lg text-gray-700 leading-relaxed mb-8">Seit 2018 unterstütze ich als IT-Berater und Software Entwickler verschiedenste Kunden vom Startup bis zum Großkonzern. Mit meinem breiten Wissen an Technologien, meiner lösungsorientierten Arbeitsweise und tiefen Expertise im Java/Spring/Cloud Umfeld, helfe ich meinen Kunden durch Neu- und Weiterentwicklungen in der Digitalisierung ihrer Prozesse, insbesondere in der Software Architektur, Entwicklung und dem Betrieb (DevOps).</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Kontaktdaten</h3>
-                        <div class="space-y-2 text-gray-700">
-                            <p class="font-medium">Stefan Michel</p>
-                            <p>+49 1517 4338957</p>
-                            <p>info@stefan-michel.com</p>
+            <dl class="hero-facts reveal" style="--d:.4s">
+                <div>
+                    <dt>Erfahrung</dt>
+                    <dd>8+ Jahre</dd>
+                </div>
+                <div>
+                    <dt>Branchen</dt>
+                    <dd>E-Commerce bis Automotive</dd>
+                </div>
+                <div>
+                    <dt>Zertifiziert</dt>
+                    <dd>Oracle OCP · Java SE 11</dd>
+                </div>
+                <div>
+                    <dt>Einsatz</dt>
+                    <dd>Remote &amp; vor Ort</dd>
+                </div>
+            </dl>
+        </div>
+        <p class="scroll-hint" aria-hidden="true">scroll</p>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Java</span><span>·</span><span>Spring</span><span>·</span><span>AWS</span><span>·</span>
+            <span>Apache Kafka</span><span>·</span><span>Terraform</span><span>·</span><span>Kubernetes</span><span>·</span>
+            <span>Rust</span><span>·</span><span>React</span><span>·</span><span>Angular</span><span>·</span>
+            <span>PostgreSQL</span><span>·</span><span>Docker</span><span>·</span><span>CI/CD</span><span>·</span>
+            <span>Java</span><span>·</span><span>Spring</span><span>·</span><span>AWS</span><span>·</span>
+            <span>Apache Kafka</span><span>·</span><span>Terraform</span><span>·</span><span>Kubernetes</span><span>·</span>
+            <span>Rust</span><span>·</span><span>React</span><span>·</span><span>Angular</span><span>·</span>
+            <span>PostgreSQL</span><span>·</span><span>Docker</span><span>·</span><span>CI/CD</span><span>·</span>
+        </div>
+    </div>
+
+    <!-- ============ PROFIL ============ -->
+    <section class="section" id="profil">
+        <span class="watermark" aria-hidden="true">01</span>
+        <div class="container">
+            <p class="section-label reveal"><span class="section-index">01</span> Profil</p>
+            <div class="profil-layout">
+                <div class="profil-photo reveal">
+                    <img src="images/profilepic.png" alt="Porträt von Stefan Michel" width="624" height="624"
+                         loading="lazy">
+                    <p class="photo-caption">Stefan Michel<br><span>Software-Engineer, B.Sc. Wirtschaftsinformatik</span>
+                    </p>
+                </div>
+                <div class="profil-text">
+                    <h2 class="section-title reveal">Vom Konzept bis zum Betrieb — <em>aus einer Hand.</em></h2>
+                    <p class="reveal">
+                        Seit 2018 unterstütze ich als IT-Berater und Software-Entwickler verschiedenste Kunden vom
+                        Startup bis zum Großkonzern. Mit breitem Technologiewissen, einer lösungsorientierten
+                        Arbeitsweise und tiefer Expertise im Java-, Spring- und Cloud-Umfeld helfe ich meinen Kunden
+                        bei der Digitalisierung ihrer Prozesse — von der Software-Architektur über die Entwicklung
+                        bis zum Betrieb.
+                    </p>
+                    <div class="stack-groups reveal">
+                        <div class="stack-group">
+                            <h3>Kern</h3>
+                            <ul class="chips">
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>Rust</li>
+                                <li>Software-Architektur</li>
+                            </ul>
+                        </div>
+                        <div class="stack-group">
+                            <h3>Cloud &amp; Ops</h3>
+                            <ul class="chips">
+                                <li>AWS</li>
+                                <li>Kubernetes</li>
+                                <li>Terraform</li>
+                                <li>Docker</li>
+                                <li>Linux</li>
+                                <li>CI/CD</li>
+                            </ul>
+                        </div>
+                        <div class="stack-group">
+                            <h3>Frontend</h3>
+                            <ul class="chips">
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>Vue.js</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="bg-primary-50 p-6 rounded-lg flex items-center justify-center ">
-                        <a href="https://drive.google.com/file/d/1ve39Egv9PDe7V9H50QavN8pSLLGQ-z9j/view"
-                           class="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg m-auto hover:bg-primary-700 transition-colors duration-300 font-medium"
-                           download="Stefan_Michel-CV.pdf">
-                            <svg class="mr-2" fill="currentColor" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                            </svg>
-                            Resumé herunterladen
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Resume Section -->
-<section class="py-16 bg-gray-50" id="resume">
-    <!-- Skills -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Technische Skills & Expertise</h2>
-        <div class="flex flex-wrap justify-center gap-3">
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">Java</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">Spring</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">Rust</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">Cloud-Technologien</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">DevOps</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">Angular</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">React</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">VueJS</span>
-            <span class="px-4 py-2 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors duration-300">Linux</span>
-        </div>
-    </div>
-
-    <div class="max-w-6xl mx-auto px-4 sm:px-8">
-        <div class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Berufserfahrung</h2>
-            <div class="grid-cols-1 gap-6">
-                <div class="bg-white mb-6 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
-                        <h3 class="text-lg font-semibold text-gray-900">OTTO GmbH &amp; Co KG</h3>
-                        <span class="text-sm text-primary-600 font-medium mt-1 sm:mt-0">2021 - derzeitig</span>
-                    </div>
-                    <p class="text-gray-700 font-medium mb-2">Software Entwickler</p>
-                </div>
-                <div class="bg-white mb-6 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
-                        <h3 class="text-lg font-semibold text-gray-900">Lufthansa Industry Solutions TS GmbH</h3>
-                        <span class="text-sm text-primary-600 font-medium mt-1 sm:mt-0">2018 - 2021</span>
-                    </div>
-                    <p class="text-gray-700 font-medium mb-2">IT-Berater / Software Entwickler</p>
-                </div>
+    <!-- ============ LEISTUNGEN ============ -->
+    <section class="section section-alt" id="leistungen">
+        <span class="watermark" aria-hidden="true">02</span>
+        <div class="container">
+            <p class="section-label reveal"><span class="section-index">02</span> Leistungen</p>
+            <h2 class="section-title reveal">Drei Disziplinen, <em>ein Anspruch.</em></h2>
+            <div class="services">
+                <article class="service-card reveal">
+                    <p class="service-index">/01</p>
+                    <h3>Software-Architektur</h3>
+                    <p>
+                        Tragfähige Architekturen für verteilte Systeme: Event-Driven Design, Microservices und
+                        saubere Schnittstellen — beraten, konzipiert und nachvollziehbar dokumentiert.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Event-Driven</li>
+                        <li>Microservices</li>
+                        <li>API-Design</li>
+                    </ul>
+                </article>
+                <article class="service-card reveal" style="--d:.1s">
+                    <p class="service-index">/02</p>
+                    <h3>Backend-Entwicklung</h3>
+                    <p>
+                        Robuste Services mit Java, Spring und Rust. Testgetrieben mit BDD und JUnit,
+                        performant und produktionsreif — Code, der auch in fünf Jahren noch wartbar ist.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Java &amp; Spring</li>
+                        <li>Rust</li>
+                        <li>BDD / JUnit</li>
+                    </ul>
+                </article>
+                <article class="service-card reveal" style="--d:.2s">
+                    <p class="service-index">/03</p>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <p>
+                        AWS-Infrastruktur als Code mit Terraform, Container-Orchestrierung mit Kubernetes und
+                        OpenShift, automatisierte CI/CD-Pipelines — vom Commit bis zum Deployment.
+                    </p>
+                    <ul class="service-tags">
+                        <li>AWS</li>
+                        <li>Terraform</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </article>
             </div>
         </div>
+    </section>
 
-        <!-- Projects Timeline -->
-        <div class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Referenz-Projekte &
-                Erfolgsgeschichten</h2>
-            <div class="relative ml-0 sm:ml-28 md:ml-40">
-                <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-primary-300 hidden sm:block"></div>
+    <!-- ============ PROJEKTE ============ -->
+    <section class="section" id="projekte">
+        <span class="watermark" aria-hidden="true">03</span>
+        <div class="container">
+            <p class="section-label reveal"><span class="section-index">03</span> Ausgewählte Projekte</p>
+            <h2 class="section-title reveal">Arbeit, die <em>wirkt.</em></h2>
 
-                <!-- Projekt 1: Retourenlogistik -->
-                <div class="relative pl-0 sm:pl-10 pb-8 sm:pb-10">
-                    <div class="static sm:absolute sm:left-0 sm:top-2 sm:-translate-x-full sm:-ml-2 mb-2 sm:mb-0 inline-block bg-primary-100 text-primary-700 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap shadow-sm border border-primary-200">07-2021 - derzeit</div>
-                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 border-l-4 border-primary-500">
-                        <div class="mb-3">
-                            <h3 class="text-xl font-semibold text-gray-900">Retourenlogistik</h3>
-                            <span class="text-gray-500 text-sm">Hamburg</span>
-                        </div>
-                        <h4 class="text-lg font-medium text-gray-800 mb-2">Entwicklung einer Event-Driven Plattform für die Retourenlogistik in der AWS Cloud</h4>
-                        <p class="text-gray-600 text-sm mb-4">Rolle: Software-Entwickler</p>
-                        <ul class="mb-4 space-y-2">
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Event-Driven Microservices mit Apache Kafka &amp; AWS (SNS/SQS)</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Infrastructure as Code mit Terraform für Cloud-Ressourcen</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>CI/CD Pipeline Automatisierung mit CircleCI</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>BDD &amp; JUnit Tests für hohe Code-Qualität</span>
-                            </li>
+            <div class="projects">
+                <article class="project reveal">
+                    <p class="project-no">001</p>
+                    <div class="project-body">
+                        <p class="project-meta">E-Commerce · Retourenlogistik — Hamburg</p>
+                        <h3>Event-Driven Plattform für die Retourenlogistik in der AWS Cloud</h3>
+                        <ul class="project-highlights">
+                            <li>Event-Driven Microservices mit Apache Kafka &amp; AWS (SNS/SQS)</li>
+                            <li>Infrastructure as Code mit Terraform</li>
+                            <li>CI/CD-Pipeline-Automatisierung mit CircleCI</li>
                         </ul>
-                        <div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Java 17</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Spring</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Terraform</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Python</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">ReactJS</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">AWS</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">RDS</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">PostgreSQL</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">DynamoDB</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">SNS</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">SQS</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">REST</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Apache Kafka</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">CircleCI</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Atlassian Stack</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">IntelliJ</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Gradle</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projekt 2: Automobil Konzern -->
-                <div class="relative pl-0 sm:pl-10 pb-8 sm:pb-10">
-                    <div class="static sm:absolute sm:left-0 sm:top-2 sm:-translate-x-full sm:-ml-2 mb-2 sm:mb-0 inline-block bg-primary-100 text-primary-700 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap shadow-sm border border-primary-200">04-2020 - 03-2021</div>
-                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 border-l-4 border-primary-500">
-                        <div class="mb-3">
-                            <h3 class="text-xl font-semibold text-gray-900">Automobil Konzern</h3>
-                            <span class="text-gray-500 text-sm">Wolfsburg - Oldenburg</span>
-                        </div>
-                        <h4 class="text-lg font-medium text-gray-800 mb-2">Entwicklung einer Schnittstellenanwendung zur Prognose der Abgaswerte zukünftiger Fahrzeuge und Fahrzeugflotten nach dem neuen WLTP Standard</h4>
-                        <p class="text-gray-600 text-sm mb-4">Rolle: IT-Berater, Software-Entwickler</p>
-                        <ul class="mb-4 space-y-2">
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>WLTP-Prognose-Algorithmen für Fahrzeugflotten implementiert</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>REST &amp; SOAP Schnittstellen für Legacy-Integration</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Automatisierte Testabdeckung mit BDD und JUnit</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>CI/CD mit Jenkins und Bamboo</span>
-                            </li>
+                        <ul class="chips project-tech">
+                            <li>Java 17</li>
+                            <li>Spring</li>
+                            <li>Apache Kafka</li>
+                            <li>AWS</li>
+                            <li>Terraform</li>
+                            <li>React</li>
+                            <li>PostgreSQL</li>
                         </ul>
-                        <div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Java 8</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Spring</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">React</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">OracleDB</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">MySQL</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">SOAP</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">REST</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Apache Tomcat</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Jenkins</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Atlassian Stack</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">SonarQube</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">IntelliJ</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Gradle</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Git</span>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                    <p class="project-duration">2021 — heute</p>
+                </article>
 
-                <!-- Projekt 3: Maritime Wirtschaft -->
-                <div class="relative pl-0 sm:pl-10 pb-8 sm:pb-10">
-                    <div class="static sm:absolute sm:left-0 sm:top-2 sm:-translate-x-full sm:-ml-2 mb-2 sm:mb-0 inline-block bg-primary-100 text-primary-700 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap shadow-sm border border-primary-200">08-2019 - 04-2020</div>
-                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 border-l-4 border-primary-500">
-                        <div class="mb-3">
-                            <h3 class="text-xl font-semibold text-gray-900">Maritime Wirtschaft</h3>
-                            <span class="text-gray-500 text-sm">Hamburg - Oldenburg</span>
-                        </div>
-                        <h4 class="text-lg font-medium text-gray-800 mb-2">Entwicklung eines elektronischen Logbuchs für die Containerschifffahrt</h4>
-                        <p class="text-gray-600 text-sm mb-4">Rolle: IT-Berater, Software-Entwickler</p>
-                        <ul class="mb-4 space-y-2">
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Gefahrstoff-Erfassungssystem für Containerschiffe</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Volltextsuche mit Apache Lucene &amp; Hibernate Search</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Architektur- und Technologieberatung</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Docker-basierte Deployment-Lösung</span>
-                            </li>
+                <article class="project reveal">
+                    <p class="project-no">002</p>
+                    <div class="project-body">
+                        <p class="project-meta">Automotive — Wolfsburg</p>
+                        <h3>Schnittstellenanwendung zur Prognose von Abgaswerten nach WLTP-Standard</h3>
+                        <ul class="project-highlights">
+                            <li>Prognose-Algorithmen für Fahrzeugflotten implementiert</li>
+                            <li>REST- &amp; SOAP-Schnittstellen für Legacy-Integration</li>
+                            <li>Automatisierte Testabdeckung mit BDD und JUnit</li>
                         </ul>
-                        <div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Java 8</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Spring</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Hibernate</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Apache Lucene</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Hibernate Search</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">MariaDB</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Docker</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Atlassian Stack</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">IntelliJ</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Gradle</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projekt 4: Business Services -->
-                <div class="relative pl-0 sm:pl-10 pb-8 sm:pb-10 last:pb-0">
-                    <div class="static sm:absolute sm:left-0 sm:top-2 sm:-translate-x-full sm:-ml-2 mb-2 sm:mb-0 inline-block bg-primary-100 text-primary-700 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap shadow-sm border border-primary-200">04-2019 - 12-2020</div>
-                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 border-l-4 border-primary-500">
-                        <div class="mb-3">
-                            <h3 class="text-xl font-semibold text-gray-900">Business Services</h3>
-                            <span class="text-gray-500 text-sm">Frankfurt a.M. - Oldenburg</span>
-                        </div>
-                        <h4 class="text-lg font-medium text-gray-800 mb-2">Entwicklung einer Webplattform zur Erfassung von Adressdaten für die zentrale Poststelle</h4>
-                        <p class="text-gray-600 text-sm mb-4">Rolle: IT-Berater, Software-Entwickler, DevOps</p>
-                        <ul class="mb-4 space-y-2">
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Full-Stack Entwicklung mit Angular &amp; Spring</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Kubernetes/OpenShift Deployment mit Helm Charts</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Microservices-Architektur konzipiert und umgesetzt</span>
-                            </li>
-                            <li class="flex items-start text-gray-700 text-sm">
-                                <svg class="w-5 h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span>Kundenorientierte Zwischenpräsentationen</span>
-                            </li>
+                        <ul class="chips project-tech">
+                            <li>Java 8</li>
+                            <li>Spring</li>
+                            <li>React</li>
+                            <li>OracleDB</li>
+                            <li>REST / SOAP</li>
+                            <li>Jenkins</li>
                         </ul>
-                        <div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Java 11</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Spring</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Angular</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">MariaDB</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Docker</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">OpenShift</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Jenkins</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Artifactory</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Microservices</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Helm</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Kubernetes</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Atlassian Stack</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">IntelliJ</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Gradle</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">Git</span>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                    <p class="project-duration">2020 — 2021</p>
+                </article>
 
+                <article class="project reveal">
+                    <p class="project-no">003</p>
+                    <div class="project-body">
+                        <p class="project-meta">Maritime Wirtschaft — Hamburg</p>
+                        <h3>Elektronisches Logbuch für die Containerschifffahrt</h3>
+                        <ul class="project-highlights">
+                            <li>Gefahrstoff-Erfassungssystem für Containerschiffe</li>
+                            <li>Volltextsuche mit Apache Lucene &amp; Hibernate Search</li>
+                            <li>Architektur- und Technologieberatung</li>
+                        </ul>
+                        <ul class="chips project-tech">
+                            <li>Java 8</li>
+                            <li>Spring</li>
+                            <li>Hibernate</li>
+                            <li>Apache Lucene</li>
+                            <li>MariaDB</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    <p class="project-duration">2019 — 2020</p>
+                </article>
+
+                <article class="project reveal">
+                    <p class="project-no">004</p>
+                    <div class="project-body">
+                        <p class="project-meta">Business Services — Frankfurt a.&nbsp;M.</p>
+                        <h3>Webplattform zur Erfassung von Adressdaten für die zentrale Poststelle</h3>
+                        <ul class="project-highlights">
+                            <li>Full-Stack-Entwicklung mit Angular &amp; Spring</li>
+                            <li>Kubernetes/OpenShift-Deployment mit Helm Charts</li>
+                            <li>Microservices-Architektur konzipiert und umgesetzt</li>
+                        </ul>
+                        <ul class="chips project-tech">
+                            <li>Java 11</li>
+                            <li>Spring</li>
+                            <li>Angular</li>
+                            <li>OpenShift</li>
+                            <li>Helm</li>
+                            <li>MariaDB</li>
+                        </ul>
+                    </div>
+                    <p class="project-duration">2019 — 2020</p>
+                </article>
             </div>
         </div>
+    </section>
 
-        <!-- Education -->
-        <div class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Bildung & Zertifizierungen</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- FernUni Hagen -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold text-gray-900">FernUniversität in Hagen</h3>
-                        <span class="text-primary-600 font-medium text-sm">04-2021 - derzeitig</span>
-                    </div>
-                    <h4 class="text-gray-800 font-medium mb-3">Angestrebt M.Sc. Praktische Informatik</h4>
+    <!-- ============ WERDEGANG ============ -->
+    <section class="section section-alt" id="werdegang">
+        <span class="watermark" aria-hidden="true">04</span>
+        <div class="container">
+            <p class="section-label reveal"><span class="section-index">04</span> Werdegang</p>
+            <h2 class="section-title reveal">Stationen &amp; <em>Qualifikationen.</em></h2>
+
+            <div class="cv-layout">
+                <div class="cv-col reveal">
+                    <h3 class="cv-heading">Berufserfahrung</h3>
+                    <ol class="cv-list">
+                        <li>
+                            <p class="cv-years">2021 — heute</p>
+                            <div>
+                                <h4>Software-Entwickler</h4>
+                                <p>OTTO GmbH &amp; Co KG</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="cv-years">2018 — 2021</p>
+                            <div>
+                                <h4>IT-Berater / Software-Entwickler</h4>
+                                <p>Lufthansa Industry Solutions TS GmbH</p>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
-                <!-- Uni Oldenburg -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold text-gray-900">Carl-von-Ossietzky Universität Oldenburg</h3>
-                        <span class="text-primary-600 font-medium text-sm">10-2015 - 01-2020</span>
-                    </div>
-                    <h4 class="text-gray-800 font-medium mb-3">Bachelor of Science Wirtschaftsinformatik</h4>
-                </div>
-                <!-- Oracle -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold text-gray-900">Oracle</h3>
-                        <span class="text-primary-600 font-medium text-sm">04-2021</span>
-                    </div>
-                    <h4 class="text-gray-800 font-medium mb-3">Oracle Certified Professional: Java SE 11 Developer</h4>
-                    <div class="text-center">
-                        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75"
-                           class="inline-block hover:scale-105 transition-transform duration-300" target="_blank">
-                            <img alt="Zertifikat: Oracle Certified Professional: Java SE 11 Developer"
-                                 src="images/Oracle_Java_SE_11_Developer.jpg"
-                                 class="w-20 h-20 object-cover rounded-lg shadow-md mx-auto mb-2"/>
-                            <span class="text-primary-600 text-sm font-medium">Zertifikat anzeigen</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- Udacity -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold text-gray-900">Udacity</h3>
-                        <span class="text-primary-600 font-medium text-sm">02-2020 - 05-2020</span>
-                    </div>
-                    <h4 class="text-gray-800 font-medium mb-3">Certified Cloud Developer</h4>
-                    <div class="text-center">
-                        <a href="https://confirm.udacity.com/UKVDSPCQ"
-                           class="inline-block hover:scale-105 transition-transform duration-300" target="_blank">
-                            <img alt="Zertifikat: Certified Cloud Developer"
-                                 src="images/cloud-developer-certificate.svg"
-                                 class="w-20 h-20 object-cover rounded-lg shadow-md mx-auto mb-2"/>
-                            <span class="text-primary-600 text-sm font-medium">Zertifikat anzeigen</span>
-                        </a>
-                    </div>
+                <div class="cv-col reveal" style="--d:.1s">
+                    <h3 class="cv-heading">Ausbildung &amp; Zertifikate</h3>
+                    <ol class="cv-list">
+                        <li>
+                            <p class="cv-years">2021 — heute</p>
+                            <div>
+                                <h4>M.Sc. Praktische Informatik <span class="cv-note">(angestrebt)</span></h4>
+                                <p>FernUniversität in Hagen</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="cv-years">2021</p>
+                            <div>
+                                <h4>
+                                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=8BF2EC41B08BA49AD64FDBEC2CF7554A46D2F5E08C580A38851C8128DF57EF75"
+                                       target="_blank" rel="noopener">Oracle Certified Professional: Java SE 11
+                                        Developer <span aria-hidden="true">↗</span></a>
+                                </h4>
+                                <p>Oracle</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="cv-years">2020</p>
+                            <div>
+                                <h4>
+                                    <a href="https://confirm.udacity.com/UKVDSPCQ" target="_blank" rel="noopener">
+                                        Certified Cloud Developer <span aria-hidden="true">↗</span></a>
+                                </h4>
+                                <p>Udacity</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="cv-years">2015 — 2020</p>
+                            <div>
+                                <h4>B.Sc. Wirtschaftsinformatik</h4>
+                                <p>Carl von Ossietzky Universität Oldenburg</p>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section class="py-16 bg-white" id="contact">
-    <div class="max-w-4xl mx-auto px-4 sm:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 font-serif text-center">Kontakt</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
-            <div class="flex items-center justify-center">
-                <p class="text-lg text-gray-700 leading-relaxed text-center">Bei Anfragen stehe Ich Ihnen gerne über E-Mail, LinkedIn zur Verfügung. Vielen Dank!</p>
-            </div>
+    <!-- ============ KONTAKT ============ -->
+    <section class="section section-contact" id="kontakt">
+        <span class="watermark" aria-hidden="true">05</span>
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="container">
+            <p class="section-label reveal"><span class="section-index">05</span> Kontakt</p>
+            <h2 class="contact-title reveal">Lassen Sie uns <em>sprechen.</em></h2>
+            <p class="contact-lead reveal">
+                Sie planen ein Projekt oder brauchen Verstärkung im Team?
+                Ich freue mich über Ihre Anfrage — per E-Mail oder LinkedIn.
+            </p>
+            <a class="contact-email reveal" href="mailto:info@stefan-michel.com">info@stefan-michel.com</a>
+            <ul class="contact-links reveal">
+                <li><a href="https://www.linkedin.com/in/stefan-michel-smi" target="_blank" rel="noopener">LinkedIn
+                    <span aria-hidden="true">↗</span></a></li>
+                <li><a href="https://github.com/smi-consulting" target="_blank" rel="noopener">GitHub
+                    <span aria-hidden="true">↗</span></a></li>
+                <li><a href="tel:+4915174338957">+49 1517 4338957</a></li>
+            </ul>
+            <p class="contact-location reveal">49393 Lohne, Deutschland · Remote europaweit</p>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-12 relative">
-    <div class="max-w-6xl mx-auto px-4 sm:px-8 text-center">
-        <!-- Social Links -->
-        <div class="flex justify-center space-x-6 mb-8">
-            <a href="mailto:info@stefan-michel.com"
-               class="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:scale-110 transform">
-                <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/stefan-michel-smi"
-               class="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:scale-110 transform">
-                <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-            </a>
-            <a href="https://github.com/smi-consulting"
-               class="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:scale-110 transform">
-                <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-            </a>
-        </div>
-
-        <!-- Copyright -->
-        <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400 mb-4">
-            <a class="hover:text-white transition-colors duration-300" href="/imprint.html">Impressum</a>
-            <span>&copy; Copyright <span id="copyright-year"></span> Stefan Michel</span>
-        </div>
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Stefan Michel — SMI Consulting</p>
+        <nav aria-label="Rechtliches">
+            <a href="imprint.html">Impressum</a>
+        </nav>
     </div>
 </footer>
 
-<!-- Back to Top Button -->
-<div class="fixed bottom-6 right-4 z-50">
-    <a class="smoothscroll bg-primary-600 hover:bg-primary-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
-       href="#home">
-        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M16.59 15.41L12 10.83l-4.59 4.58L6 14l6-6 6 6-1.41 1.41z"/>
-        </svg>
-    </a>
-</div>
-
-<!-- Scripts -->
-<script src="js/init-vanilla.js?v=4"></script>
-
+<script src="js/main.js" defer></script>
 </body>
-
 </html>

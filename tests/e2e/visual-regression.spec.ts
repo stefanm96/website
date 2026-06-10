@@ -1,71 +1,42 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
-test.describe('Visual Regression', () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto('/');
-    await page.waitForTimeout(1000);
+// Animationen deaktivieren, damit Screenshots deterministisch sind
+async function prepare(page: import('@playwright/test').Page, path = '/') {
+  await page.goto(path, { waitUntil: 'networkidle' });
+  await page.addStyleTag({
+    content: `
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .grain { display: none !important; }
+    `,
+  });
+  await page.waitForTimeout(300);
+}
+
+test.describe('Visuelle Regression', () => {
+  test.skip(
+    ({ browserName, isMobile }) => browserName !== 'chromium' || isMobile,
+    'Baselines werden nur für Desktop-Chromium gepflegt'
+  );
+
+  test('Hero', async ({ page }) => {
+    await prepare(page);
+    await expect(page).toHaveScreenshot('hero.png', { maxDiffPixelRatio: 0.02 });
   });
 
-  test('hero section screenshot', async ({ page }) => {
-    const hero = page.locator('section').first();
-    await expect(hero).toHaveScreenshot('hero-section.png', {
-      maxDiffPixels: 100,
+  test('Projekte', async ({ page }) => {
+    await prepare(page);
+    await page.locator('#projekte').scrollIntoViewIfNeeded();
+    await expect(page.locator('#projekte')).toHaveScreenshot('projekte.png', {
+      maxDiffPixelRatio: 0.02,
     });
   });
 
-  test('navigation screenshot', async ({ page, isMobile }) => {
-    test.skip(isMobile, 'Desktop-only test');
-
-    const nav = page.locator('nav');
-    await expect(nav).toHaveScreenshot('navigation.png', {
-      maxDiffPixels: 50,
-    });
-  });
-
-  test('skills section screenshot', async ({ page }) => {
-    const skills = page.locator('h2').filter({ hasText: 'Technische Skills & Expertise' }).locator('..');
-    await skills.scrollIntoViewIfNeeded();
-    await expect(skills).toHaveScreenshot('skills-section.png', {
-      maxDiffPixels: 100,
-    });
-  });
-
-  test('footer screenshot', async ({ page }) => {
-    const footer = page.locator('footer');
-    await footer.scrollIntoViewIfNeeded();
-    await expect(footer).toHaveScreenshot('footer.png', {
-      maxDiffPixels: 50,
-    });
-  });
-
-  test('mobile menu open screenshot', async ({ page, isMobile }) => {
-    test.skip(!isMobile, 'Mobile-only test');
-
-    const menuButton = page.locator('nav button').first();
-    await menuButton.click();
-    await page.waitForTimeout(300);
-
-    const nav = page.locator('nav');
-    await expect(nav).toHaveScreenshot('mobile-menu-open.png', {
-      maxDiffPixels: 50,
-    });
-  });
-
-  test('full page screenshot - desktop', async ({ page, isMobile }) => {
-    test.skip(isMobile, 'Desktop-only test');
-
-    await expect(page).toHaveScreenshot('full-page-desktop.png', {
-      fullPage: true,
-      maxDiffPixels: 500,
-    });
-  });
-
-  test('full page screenshot - mobile', async ({ page, isMobile }) => {
-    test.skip(!isMobile, 'Mobile-only test');
-
-    await expect(page).toHaveScreenshot('full-page-mobile.png', {
-      fullPage: true,
-      maxDiffPixels: 500,
+  test('Kontakt', async ({ page }) => {
+    await prepare(page);
+    await page.locator('#kontakt').scrollIntoViewIfNeeded();
+    await expect(page.locator('#kontakt')).toHaveScreenshot('kontakt.png', {
+      maxDiffPixelRatio: 0.02,
     });
   });
 });

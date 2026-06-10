@@ -1,98 +1,48 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.describe('Navigation', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
   });
 
-  test('desktop navigation links are visible and correct', async ({ page, isMobile }) => {
-    test.skip(isMobile, 'Desktop-only test');
-
-    const navLinks = [
-      { text: 'Über mich', href: '#about' },
-      { text: 'Erfahrung', href: '#resume' },
-      { text: 'Kontakt', href: '#contact' },
-    ];
-
-    for (const link of navLinks) {
-      const navLink = page.locator(`nav a[href="${link.href}"]`).first();
-      await expect(navLink).toBeVisible();
-      await expect(navLink).toHaveText(link.text);
+  test('Nav-Links führen zu allen Sektionen', async ({ page, isMobile }) => {
+    test.skip(isMobile, 'Desktop-Navigation');
+    for (const id of ['profil', 'leistungen', 'projekte', 'werdegang', 'kontakt']) {
+      await page.click(`.site-nav a[href="#${id}"]`);
+      await expect(page.locator(`#${id}`)).toBeInViewport();
     }
   });
 
-  test('desktop navigation links scroll to correct sections', async ({ page, isMobile }) => {
-    test.skip(isMobile, 'Desktop-only test');
-
-    const navLinks = [
-      { href: '#about', section: '#about' },
-      { href: '#resume', section: '#resume' },
-      { href: '#contact', section: '#contact' },
-    ];
-
-    for (const link of navLinks) {
-      const navLink = page.locator(`nav a[href="${link.href}"]`).first();
-      await navLink.click();
-      await expect(page.locator(link.section)).toBeInViewport();
-    }
+  test('Header erhält Hintergrund beim Scrollen', async ({ page }) => {
+    const header = page.locator('.site-header');
+    await expect(header).not.toHaveClass(/scrolled/);
+    await page.evaluate(() => window.scrollTo({ top: 600, behavior: 'instant' }));
+    await expect(header).toHaveClass(/scrolled/);
   });
 
-  test('logo links to home', async ({ page }) => {
-    const logoLink = page.locator('nav a[href="#home"]');
-    await expect(logoLink).toBeVisible();
-    await expect(logoLink).toHaveText('Stefan Michel');
+  test('Mobile Menü öffnet, navigiert und schließt', async ({ page, isMobile }) => {
+    test.skip(!isMobile, 'Mobile-Navigation');
+    const toggle = page.locator('#nav-toggle');
+    const nav = page.locator('#site-nav');
+
+    await toggle.click();
+    await expect(nav).toHaveClass(/open/);
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+
+    await page.click('.site-nav a[href="#kontakt"]');
+    await expect(nav).not.toHaveClass(/open/);
+    await expect(page.locator('#kontakt')).toBeInViewport();
   });
 
-  test('mobile menu button is visible', async ({ page, isMobile }) => {
-    test.skip(!isMobile, 'Mobile-only test');
-
-    const menuButton = page.locator('nav button').first();
-    await expect(menuButton).toBeVisible();
+  test('Wordmark führt zurück nach oben', async ({ page }) => {
+    await page.evaluate(() => window.scrollTo({ top: 2000, behavior: 'instant' }));
+    await page.locator('.wordmark').click();
+    await expect(page.locator('.hero-title')).toBeInViewport();
   });
 
-  test('mobile menu opens and closes', async ({ page, isMobile }) => {
-    test.skip(!isMobile, 'Mobile-only test');
-
-    const menuButton = page.locator('nav button').first();
-
-    await menuButton.click();
-
-    const mobileLinks = page.locator('nav').locator('a[href="#about"]');
-    await expect(mobileLinks.first()).toBeVisible();
-
-    await menuButton.click();
-    await page.waitForTimeout(300);
-  });
-
-  test('mobile menu links navigate correctly', async ({ page, isMobile }) => {
-    test.skip(!isMobile, 'Mobile-only test');
-
-    const menuButton = page.locator('nav button').first();
-    await menuButton.click();
-
-    const aboutLink = page.locator('nav a[href="#about"]').first();
-    await aboutLink.click();
-
-    await expect(page.locator('#about')).toBeInViewport();
-  });
-
-  test('back to top button appears on scroll', async ({ page }) => {
-    const backToTop = page.locator('a[href="#home"]').last();
-
-    await page.evaluate(() => window.scrollTo(0, 1000));
-    await page.waitForTimeout(500);
-    await expect(backToTop).toBeVisible();
-  });
-
-  test('back to top button scrolls to top', async ({ page }) => {
-    await page.evaluate(() => window.scrollTo(0, 1000));
-    await page.waitForTimeout(500);
-
-    const backToTop = page.locator('a[href="#home"]').last();
-    await backToTop.click();
-
-    await page.waitForTimeout(500);
-    const scrollY = await page.evaluate(() => window.scrollY);
-    expect(scrollY).toBeLessThan(100);
+  test('Scroll-Reveal blendet Inhalte ein', async ({ page }) => {
+    const title = page.locator('#projekte .section-title');
+    await title.scrollIntoViewIfNeeded();
+    await expect(title).toHaveClass(/visible/);
   });
 });
