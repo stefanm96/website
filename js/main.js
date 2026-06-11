@@ -36,8 +36,16 @@
         if (e.key === 'Escape') closeNav();
     });
 
-    // Scroll-Reveal
-    var revealEls = document.querySelectorAll('.reveal');
+    // Scroll-Reveal — Elemente im initialen Viewport sofort einblenden,
+    // nur der Rest wartet auf den IntersectionObserver
+    var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    var belowFold = revealEls.filter(function (el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+            el.classList.add('visible');
+            return false;
+        }
+        return true;
+    });
     if ('IntersectionObserver' in window) {
         var revealObserver = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
@@ -47,11 +55,11 @@
                 }
             });
         }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-        revealEls.forEach(function (el) {
+        belowFold.forEach(function (el) {
             revealObserver.observe(el);
         });
     } else {
-        revealEls.forEach(function (el) {
+        belowFold.forEach(function (el) {
             el.classList.add('visible');
         });
     }
