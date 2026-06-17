@@ -2,6 +2,13 @@
 (function () {
     'use strict';
 
+    // Erfahrung in Jahren
+    var experienceYearsText = document.getElementById('experienceYears');
+    if (experienceYearsText) {
+        let startingYear = 2018;
+        experienceYearsText.textContent = String(new Date().getFullYear() - startingYear) + "+ Jahre";
+    }
+
     // Copyright-Jahr
     var yearEl = document.getElementById('year');
     if (yearEl) {
