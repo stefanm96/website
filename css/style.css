@@ -1085,6 +1085,10 @@ html.js .reveal.visible {
     color: var(--muted);
 }
 
+.legal-body p + p {
+    margin-top: 0.9rem;
+}
+
 .legal-body a {
     color: var(--ink);
     border-bottom: 1px solid var(--line-strong);
@@ -1096,7 +1100,7 @@ html.js .reveal.visible {
     border-color: var(--accent);
 }
 
-.legal-source {
+.legal-body .legal-source {
     margin-top: 2.5rem;
     font-family: var(--font-mono);
     font-size: 0.75rem;
@@ -1118,6 +1122,11 @@ html.js .reveal.visible {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     color: var(--muted);
+}
+
+.footer-inner nav {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .footer-inner a {

@@ -57,10 +57,11 @@ test.describe('Inhalte', () => {
     await expect(kontakt).toContainText('Lohne');
   });
 
-  test('Footer zeigt aktuelles Jahr und Impressum-Link', async ({ page }) => {
+  test('Footer zeigt aktuelles Jahr, Impressum- und Datenschutz-Link', async ({ page }) => {
     const year = String(new Date().getFullYear());
     await expect(page.locator('.site-footer')).toContainText(year);
     await expect(page.locator('.site-footer a[href="imprint.html"]')).toBeVisible();
+    await expect(page.locator('.site-footer a[href="datenschutz.html"]')).toBeVisible();
   });
 });
 
@@ -71,5 +72,54 @@ test.describe('Impressum', () => {
     await expect(page.locator('h1')).toContainText('Impressum');
     await expect(page.locator('.legal-body')).toContainText('Mülhausener Straße 44');
     await expect(page.locator('.legal-body')).toContainText('49393 Lohne');
+  });
+});
+
+test.describe('Datenschutz', () => {
+  test('Datenschutzerklärung ist erreichbar und nennt GoatCounter', async ({ page }) => {
+    await page.goto('/datenschutz.html');
+    await expect(page).toHaveTitle(/Datenschutz/);
+    await expect(page.locator('h1')).toContainText('Datenschutz');
+    await expect(page.locator('.legal-body')).toContainText('GoatCounter');
+    await expect(page.locator('.legal-body')).toContainText('keine Cookies');
+  });
+});
+
+test.describe('Analytics', () => {
+  for (const path of ['/', '/imprint.html', '/datenschutz.html']) {
+    test(`GoatCounter ist lokal eingebunden auf ${path}`, async ({ page }) => {
+      await page.goto(path);
+      const script = page.locator('script[data-goatcounter]');
+      await expect(script).toHaveAttribute('data-goatcounter', 'https://stefan-michel.goatcounter.com/count');
+      await expect(script).toHaveAttribute('src', 'js/vendor/goatcounter-count.v4.js');
+    });
+  }
+
+  test('Wichtige Links haben Klick-Tracking', async ({ page }) => {
+    await page.goto('/');
+    for (const name of [
+      'nav-kontakt',
+      'hero-projekt-anfragen',
+      'hero-projekte',
+      'zertifikat-oracle',
+      'zertifikat-udacity',
+      'kontakt-email',
+      'kontakt-linkedin',
+      'kontakt-github',
+      'kontakt-telefon',
+    ]) {
+      await expect(page.locator(`[data-goatcounter-click="${name}"]`)).toHaveCount(1);
+    }
+  });
+
+  test('Auf localhost wird nichts an GoatCounter gesendet', async ({ page }) => {
+    const requests: string[] = [];
+    page.on('request', (req) => {
+      if (req.url().includes('goatcounter.com')) requests.push(req.url());
+    });
+    await page.goto('/');
+    await page.locator('[data-goatcounter-click="hero-projekte"]').click();
+    await page.waitForTimeout(300);
+    expect(requests).toEqual([]);
   });
 });
